@@ -1444,4 +1444,487 @@
          "explanation": "Research indicates that dataset sizes for training LLMs are doubling every eight months[cite: 106, 912].",
         "topic": "Hardware and Efficiency"
     }
+,
+
+    {
+        "question": "According to the 2025 report, what is the 'saturation' issue currently affecting AI benchmarking?",
+        "options": [
+            "Models are becoming too large to be tested by standard hardware.",
+            "Traditional benchmarks have become too easy for top-tier models to provide meaningful differentiation.",
+            "There is a lack of diverse data to create new benchmarks.",
+            "Public benchmarks are being hidden behind paywalls by private companies."
+        ],
+        "correct": "Traditional benchmarks have become too easy for top-tier models to provide meaningful differentiation.",
+        "explanation": "The report notes that as models reach near-perfect scores on tests like MMLU, new and significantly harder benchmarks are required to measure progress.",
+        "topic": "Strategic Trends in Technical Performance"
+    },
+    {
+        "question": "What major shift in the 'open vs. closed' model debate was observed over the last year?",
+        "options": [
+            "Closed-source models have doubled the performance gap over open-source ones.",
+            "Open-weight models are rapidly closing the performance gap with the best proprietary models.",
+            "Open-source development has largely ceased due to high costs.",
+            "Closed-source models have become entirely obsolete in industry settings."
+        ],
+        "correct": "Open-weight models are rapidly closing the performance gap with the best proprietary models.",
+        "explanation": "The report highlights that the disparity between top open-weight and closed-source models is narrowing to a negligible margin.",
+        "topic": "Strategic Trends in Research & Development"
+    },
+    {
+        "question": "In the context of AI efficiency, what does the 'Phi-3 Mini' phenomenon illustrate regarding model development?",
+        "options": [
+            "Models must get larger to improve reasoning.",
+            "Smaller, high-quality models can now achieve performance levels previously reserved for massive systems.",
+            "Algorithm efficiency is declining as data sets grow.",
+            "Small models are only useful for simple chatbots, not complex reasoning."
+        ],
+        "correct": "Smaller, high-quality models can now achieve performance levels previously reserved for massive systems.",
+        "explanation": "The report shows that strategic algorithmic improvements allow much smaller models to match the benchmarks of older, larger predecessors.",
+        "topic": "Model Efficiency & Architecture"
+    },
+    {
+        "question": "What is the primary trend in the relationship between industry and academia in AI research?",
+        "options": [
+            "Academia has regained the lead in producing the most 'notable' large-scale models.",
+            "Industry is increasingly dominating the production of frontier models due to compute requirements.",
+            "Government labs have replaced industry as the primary source of innovation.",
+            "Industry and academia have completely stopped collaborating on research."
+        ],
+        "correct": "Industry is increasingly dominating the production of frontier models due to compute requirements.",
+        "explanation": "The report highlights that industry produced nearly 90% of notable models in 2024, driven by the massive resource requirements of frontier AI.",
+        "topic": "Socioeconomic Landscape of Research"
+    },
+    {
+        "question": "How has the nature of AI-related regulation changed globally in 2024?",
+        "options": [
+            "Regulation has slowed down as governments wait for the technology to mature.",
+            "There is a sharp increase in the volume and diversity of AI-specific legal frameworks and agency rules.",
+            "Countries are moving toward a single, unified global AI law.",
+            "Regulations are now focusing exclusively on hardware rather than software applications."
+        ],
+        "correct": "There is a sharp increase in the volume and diversity of AI-specific legal frameworks and agency rules.",
+        "explanation": "The report details a significant rise in AI-related legislative mentions and specific regulatory actions by federal agencies.",
+        "topic": "Policy and Governance"
+    },
+    {
+        "question": "What general trend does the report identify regarding AI's impact on the field of medicine?",
+        "options": [
+            "AI is primarily used for administrative tasks rather than clinical ones.",
+            "The integration of AI into clinical practice is accelerating, particularly in diagnostic and medical device approvals.",
+            "Medical AI has been restricted due to rising privacy concerns.",
+            "AI has failed to improve the accuracy of medical imaging over traditional methods."
+        ],
+        "correct": "The integration of AI into clinical practice is accelerating, particularly in diagnostic and medical device approvals.",
+        "explanation": "The massive increase in FDA-approved AI medical devices demonstrates AI's growing role in real-world healthcare.",
+        "topic": "AI in Science and Medicine"
+    },
+    {
+        "question": "Regarding AI hardware, what is a critical bottleneck identified in the 2025 report?",
+        "options": [
+            "A surplus of chips is leading to decreased investment.",
+            "The rapidly increasing energy requirements for training and running large-scale models.",
+            "A lack of software to utilize current hardware effectively.",
+            "Physical space in data centers is no longer an issue."
+        ],
+        "correct": "The rapidly increasing energy requirements for training and running large-scale models.",
+        "explanation": "The report emphasizes that training compute and the associated power requirements are doubling at an unsustainable annual rate.",
+        "topic": "Hardware and Infrastructure"
+    },
+    {
+        "question": "What is the 'Global South' perspective on AI infrastructure according to the report's summary?",
+        "options": [
+            "There is no interest in AI development in developing nations.",
+            "Basic infrastructure gaps, such as electricity, remain the primary hurdle to AI adoption and education.",
+            "Developing nations have already surpassed the West in AI infrastructure.",
+            "Access to AI is universally distributed regardless of local infrastructure."
+        ],
+        "correct": "Basic infrastructure gaps, such as electricity, remain the primary hurdle to AI adoption and education.",
+        "explanation": "The report notes that for many nations, foundational issues like power stability must be solved before AI can be effectively utilized.",
+        "topic": "Global AI Disparities"
+    },
+    {
+        "question": "What trend has been observed in the cost of AI development and deployment?",
+        "options": [
+            "Inference costs are rising as models become more complex.",
+            "Training costs for frontier models are decreasing significantly.",
+            "While training costs for top models are soaring, the cost of using existing models (inference) is plummeting.",
+            "Hardware costs are the only factor that has remained stable."
+        ],
+        "correct": "While training costs for top models are soaring, the cost of using existing models (inference) is plummeting.",
+        "explanation": "The report shows that while leading models cost hundreds of millions to train, the efficiency of running them has improved by several orders of magnitude.",
+        "topic": "Economy and Investment"
+    },
+    {
+        "question": "How is the public's perception of AI evolving globally?",
+        "options": [
+            "The public is becoming universally more optimistic about AI.",
+            "There is a growing divide in sentiment, with high optimism in emerging economies and more caution in Western nations.",
+            "Public interest in AI has peaked and is now declining.",
+            "Fear of AI has been completely replaced by excitement regarding job creation."
+        ],
+        "correct": "There is a growing divide in sentiment, with high optimism in emerging economies and more caution in Western nations.",
+        "explanation": "The report documents high optimism in countries like China and Indonesia, contrasted with significant concern in the U.S. and Europe.",
+        "topic": "Public Opinion and Society"
+    },
+    {
+        "question": "What does the report suggest about the 'reasoning' capabilities of current AI models?",
+        "options": [
+            "AI has fully solved the problem of logical reasoning.",
+            "Models are shifting toward 'test-time compute' to simulate more complex reasoning processes.",
+            "Current models have reached a plateau where reasoning cannot be improved.",
+            "Reasoning is becoming less important than simple pattern recognition."
+        ],
+        "correct": "Models are shifting toward 'test-time compute' to simulate more complex reasoning processes.",
+        "explanation": "New paradigms like those used in the 'o1' model series show that 'thinking' longer during inference can yield better logical results.",
+        "topic": "Strategic Trends in Technical Performance"
+    },
+    {
+        "question": "In the workforce, what is the reported trend regarding AI and productivity?",
+        "options": [
+            "AI has led to a decrease in overall worker efficiency.",
+            "Early studies suggest AI can significantly boost productivity, especially for lower-skilled workers.",
+            "AI only benefits highly specialized software engineers.",
+            "No measurable productivity gains have been found in the 2024 data."
+        ],
+        "correct": "Early studies suggest AI can significantly boost productivity, especially for lower-skilled workers.",
+        "explanation": "The report cites multiple studies showing that AI tools help bridge the skill gap and increase the speed of routine professional tasks.",
+        "topic": "Economy and Investment"
+    },
+    {
+        "question": "What is the primary concern regarding 'Deepfakes' highlighted in the 2025 summary?",
+        "options": [
+            "They are too expensive to produce.",
+            "They are easily detectable by current consumer software.",
+            "Their potential to undermine trust in information and disrupt political processes.",
+            "They are used primarily for harmless entertainment purposes."
+        ],
+        "correct": "Their potential to undermine trust in information and disrupt political processes.",
+        "explanation": "The report notes that the ease of creating high-quality synthetic media is a top concern for global governance and social stability.",
+        "topic": "Responsible AI"
+    },
+    {
+        "question": "What does the report conclude about the use of AI in scientific discovery?",
+        "options": [
+            "AI is slowing down the scientific process due to errors.",
+            "AI is becoming a core tool in 'hard' sciences like physics and chemistry, leading to Nobel-caliber breakthroughs.",
+            "Scientific AI is limited strictly to data entry.",
+            "AI has been banned from most academic research journals."
+        ],
+        "correct": "AI is becoming a core tool in 'hard' sciences like physics and chemistry, leading to Nobel-caliber breakthroughs.",
+        "explanation": "The report highlights major wins in protein folding and materials science as evidence of AI's transformative role in research.",
+        "topic": "AI in Science and Medicine"
+    },
+    {
+        "question": "What trend is emerging in 'National AI Strategies' globally?",
+        "options": [
+            "Countries are focusing less on AI and more on traditional manufacturing.",
+            "There is a race to build 'sovereign AI' through massive government-led infrastructure investments.",
+            "Nations are agreeing to stop investing in AI hardware to save energy.",
+            "National strategies are focusing only on banning AI in schools."
+        ],
+        "correct": "There is a race to build 'sovereign AI' through massive government-led infrastructure investments.",
+        "explanation": "As seen with projects in Saudi Arabia and various European initiatives, nations are treating AI compute as a critical national resource.",
+        "topic": "Policy and Governance"
+    },
+    {
+        "question": "Regarding AI education, what shift is occurring in the academic world?",
+        "options": [
+            "Interest in AI-related degrees is declining.",
+            "AI is being integrated across diverse disciplines, not just in computer science departments.",
+            "Universities are removing AI from the curriculum due to cheating concerns.",
+            "Most AI education is now happening outside of traditional universities."
+        ],
+        "correct": "AI is being integrated across diverse disciplines, not just in computer science departments.",
+        "explanation": "The report notes that AI literacy is becoming a requirement across many fields of study beyond engineering.",
+        "topic": "Education"
+    },
+    {
+        "question": "What is the main takeaway regarding the 'Environmental Impact' of AI?",
+        "options": [
+            "AI development has no measurable impact on the environment.",
+            "The carbon footprint of training the largest models is growing, but hardware efficiency is also improving.",
+            "AI is the primary cause of global water shortages.",
+            "Models are now exclusively trained using carbon-neutral energy."
+        ],
+        "correct": "The carbon footprint of training the largest models is growing, but hardware efficiency is also improving.",
+        "explanation": "While emissions for top-tier models are high, the report notes that efficiency gains are partially offsetting the total environmental cost.",
+        "topic": "Hardware and Infrastructure"
+    },
+    {
+        "question": "In the corporate world, what is the primary shift in AI adoption?",
+        "options": [
+            "Most companies have stopped using AI after initial pilot failures.",
+            "AI has moved from an experimental 'hype' phase to a widespread operational tool integrated into business processes.",
+            "Only tech giants are using AI, while small businesses remain unaffected.",
+            "Companies are using AI solely for customer service bots."
+        ],
+        "correct": "AI has moved from an experimental 'hype' phase to a widespread operational tool integrated into business processes.",
+        "explanation": "The jump in organizations reporting AI use indicates that the technology is now a standard part of corporate strategy.",
+        "topic": "Economy and Investment"
+    },
+    {
+        "question": "What does the report suggest about the future of AI 'Self-Correction' and safety?",
+        "options": [
+            "Models have become perfectly safe and no longer require human oversight.",
+            "Developing reliable methods for AI to detect and fix its own errors remains a major research challenge.",
+            "Safety research has been largely abandoned in favor of speed.",
+            "AI is now legally required to be 100% accurate in all jurisdictions."
+        ],
+        "correct": "Developing reliable methods for AI to detect and fix its own errors remains a major research challenge.",
+        "explanation": "The report emphasizes that 'high-stakes' reliability is still an unsolved problem in AI safety research.",
+        "topic": "Responsible AI"
+    },
+    {
+        "question": "What major trend is observed in 'Multi-modal' AI development?",
+        "options": [
+            "Models are becoming more specialized, focusing only on text or only on images.",
+            "Frontier models are increasingly 'native' multi-modal, processing text, audio, and video simultaneously.",
+            "Multi-modal AI has proven to be less effective than text-only models.",
+            "Video generation has been removed from most major AI platforms."
+        ],
+        "correct": "Frontier models are increasingly 'native' multi-modal, processing text, audio, and video simultaneously.",
+        "explanation": "The latest models are designed to understand and generate across all media types in a single architecture.",
+        "topic": "Strategic Trends in Technical Performance"
+    }
+,
+    {
+        "question": "What is the primary trend regarding the 'frontier' of AI model performance according to the 2025 report?",
+        "options": [
+            "A single developer has established an insurmountable lead.",
+            "The performance gap between the top-ranked models is rapidly shrinking.",
+            "Model performance has reached a permanent plateau.",
+            "Open-source models have completely surpassed closed-source models."
+        ],
+        "correct": "The performance gap between the top-ranked models is rapidly shrinking.",
+         "explanation": "The report highlights that the frontier is becoming increasingly crowded and competitive, with narrowing Elo score differences between top models[cite: 64, 913, 914].",
+        "topic": "Strategic Trends in AI Performance"
+    },
+    {
+        "question": "How has the institutional landscape of 'notable' AI model development changed between 2023 and 2024?",
+        "options": [
+            "Academia has regained the lead from industry.",
+            "Government agencies now produce the majority of frontier models.",
+            "Industry's dominance in producing notable models has significantly increased.",
+            "Non-profit organizations have become the primary developers."
+        ],
+        "correct": "Industry's dominance in producing notable models has significantly increased.",
+         "explanation": "Industry's share of notable model development grew from 60% in 2023 to nearly 90% in 2024[cite: 62, 95, 911].",
+        "topic": "Socioeconomic Trends in Research"
+    },
+    {
+        "question": "What does the 2025 report identify as a major shift in the 'open vs. closed' model debate?",
+        "options": [
+            "Closed-weight models are widening their performance lead.",
+            "Open-weight models are now significantly more expensive to run.",
+            "The performance gap between top open-weight and closed-weight models has nearly disappeared.",
+            "Open-weight models are no longer being released by major developers."
+        ],
+        "correct": "The performance gap between top open-weight and closed-weight models has nearly disappeared.",
+         "explanation": "The gap narrowed from 8.0% in early 2024 to just 1.7% by early 2025, lowering barriers to advanced AI[cite: 51, 125, 126, 900].",
+        "topic": "Strategic Trends in Technical Performance"
+    },
+    {
+        "question": "Which trend best describes the current state of AI benchmarking as noted in the summary?",
+        "options": [
+            "Benchmarks are becoming easier to create due to AI automation.",
+            "Traditional benchmarks are becoming 'saturated' as models achieve near-perfect scores.",
+            "Benchmarks are no longer considered a reliable way to measure progress.",
+            "The industry has agreed on a single, permanent benchmark for all models."
+        ],
+        "correct": "Traditional benchmarks are becoming 'saturated' as models achieve near-perfect scores.",
+         "explanation": "The saturation of older tests has pushed researchers to develop more rigorous academic and math-focused benchmarks[cite: 136, 137, 138].",
+        "topic": "Strategic Trends in Technical Performance"
+    },
+    {
+        "question": "In terms of global R&D, what role does academia continue to play despite industry's lead in model production?",
+        "options": [
+            "Academia leads in funding large-scale compute clusters.",
+            "Academia remains the primary source of highly cited research publications.",
+            "Academia has shifted entirely to AI ethics and policy.",
+            "Academia no longer contributes significantly to AI research."
+        ],
+        "correct": "Academia remains the primary source of highly cited research publications.",
+         "explanation": "While industry leads in model building, academia has remained the top producer of highly influential (top 100) research[cite: 62, 96, 911].",
+        "topic": "Socioeconomic Trends in Research"
+    },
+    {
+        "question": "What major trend is observed in the geographical landscape of AI model quality between the U.S. and China?",
+        "options": [
+            "The U.S. has significantly widened its quality lead.",
+            "China has surpassed the U.S. in both quantity and quality.",
+            "Chinese models have rapidly closed the performance gap on major benchmarks.",
+            "European models have overtaken both U.S. and Chinese models."
+        ],
+        "correct": "Chinese models have rapidly closed the performance gap on major benchmarks.",
+         "explanation": "Performance differences on benchmarks like MMLU and HumanEval shrank from double digits to near parity in 2024[cite: 40, 128, 129, 886].",
+        "topic": "Geopolitical Trends in AI"
+    },
+    {
+        "question": "How has the 'Turing Test' been characterized by the AI Index co-directors in 2025?",
+        "options": [
+            "It remains the 'gold standard' for AI intelligence.",
+            "It has been surpassed by today's systems and is no longer an ambitious goal.",
+            "It has been proven mathematically impossible to pass.",
+            "It is the primary benchmark used for government regulation."
+        ],
+        "correct": "It has been surpassed by today's systems and is no longer an ambitious goal.",
+         "explanation": "Sophisticated modern systems have exceeded the test, making it a less useful metric for frontier AI[cite: 15, 858].",
+        "topic": "Strategic Trends in AI Development"
+    },
+    {
+        "question": "What shift has occurred in the business world regarding AI adoption as of 2024?",
+        "options": [
+            "Businesses are becoming more skeptical due to high costs.",
+            "Adoption has slowed down as companies wait for regulation.",
+            "AI has moved from the margins to become a central driver of business value and usage.",
+            "Most companies have replaced their entire workforce with AI."
+        ],
+        "correct": "AI has moved from the margins to become a central driver of business value and usage.",
+         "explanation": "Business adoption accelerated significantly in 2024, rising from 55% to 78% of organizations[cite: 18, 36, 861, 882].",
+        "topic": "Economic Trends"
+    },
+    {
+        "question": "According to the report, what is the 'scaling' trend for training compute and data?",
+        "options": [
+            "Compute and data needs have stabilized and are now decreasing.",
+            "Training compute, dataset sizes, and power use are all doubling at rapid, short-term intervals.",
+            "Data is doubling, but compute needs are staying flat due to efficiency.",
+            "Scaling has stopped due to environmental regulations."
+        ],
+        "correct": "Training compute, dataset sizes, and power use are all doubling at rapid, short-term intervals.",
+         "explanation": "Compute doubles every 5 months, datasets every 8 months, and power use annually[cite: 63, 106, 912].",
+        "topic": "Infrastructure and Scaling"
+    },
+    {
+        "question": "What is the primary barrier to AI education in developing regions like Africa, despite curriculum progress?",
+        "options": [
+            "Lack of interest from students.",
+            "Governmental bans on AI technology.",
+            "Basic infrastructure gaps such as unreliable electricity.",
+            "The high cost of AI textbooks."
+        ],
+        "correct": "Basic infrastructure gaps such as unreliable electricity.",
+         "explanation": "Infrastructure remains the primary hurdle for expanding computer science education in many African nations[cite: 59, 908].",
+        "topic": "AI Education and Access"
+    },
+    {
+        "question": "What does the 2025 report conclude about AI's impact on worker productivity?",
+        "options": [
+            "AI has no measurable impact on productivity yet.",
+            "AI boosts productivity and generally helps narrow skill gaps in the workforce.",
+            "AI primarily benefits only the most highly skilled workers.",
+            "AI has led to a global decrease in professional work quality."
+        ],
+        "correct": "AI boosts productivity and generally helps narrow skill gaps in the workforce.",
+         "explanation": "Research confirms productivity gains and indicates that AI often assists lower-skilled workers in catching up[cite: 37, 883].",
+        "topic": "Economic Trends"
+    },
+    {
+        "question": "How has global public optimism regarding AI shifted according to 2024 surveys?",
+        "options": [
+            "Optimism is declining universally due to job fears.",
+            "There is a sharp divide between high optimism in emerging economies and lower optimism in the West.",
+            "The U.S. and Canada are now the most optimistic nations regarding AI.",
+            "Sentiment has become entirely uniform across all regions."
+        ],
+        "correct": "There is a sharp divide between high optimism in emerging economies and lower optimism in the West.",
+         "explanation": "Countries like China and Thailand show high optimism (above 75%), while Western nations remain much more skeptical[cite: 46, 47, 48, 895, 896, 897].",
+        "topic": "Public Opinion"
+    },
+    {
+        "question": "What major trend is occurring in AI-related government policy globally?",
+        "options": [
+            "Governments are deregulating to encourage faster growth.",
+            "Policy is shifting from mere debate to large-scale infrastructure investment and regulation.",
+            "Most countries have decided to ban AI in public sectors.",
+            "Policy has become less important as private companies take over governance."
+        ],
+        "correct": "Policy is shifting from mere debate to large-scale infrastructure investment and regulation.",
+         "explanation": "Several countries have launched billion-dollar initiatives and significantly increased regulatory actions[cite: 19, 20, 53, 54, 862, 863].",
+        "topic": "Policy and Governance"
+    },
+    {
+        "question": "Which area of AI performance remains a significant challenge for modern systems in high-stakes settings?",
+        "options": [
+            "Basic text generation and summarization.",
+            "Generating high-quality video from text.",
+            "Reliably solving complex logic and reasoning tasks.",
+            "Outperforming humans in simple programming tasks."
+        ],
+        "correct": "Reliably solving complex logic and reasoning tasks.",
+         "explanation": "Models still struggle with precision in reasoning benchmarks like PlanBench, which limits their use where precision is critical[cite: 67, 68, 920, 921].",
+        "topic": "Technical Challenges"
+    },
+    {
+        "question": "How has the 'accessibility' of advanced AI changed over the last two years?",
+        "options": [
+            "It has decreased as costs have skyrocketed.",
+            "It has increased due to massive reductions in inference costs and the rise of capable small models.",
+            "It is now restricted only to government researchers.",
+            "It has remained stagnant since 2022."
+        ],
+        "correct": "It has increased due to massive reductions in inference costs and the rise of capable small models.",
+         "explanation": "Inference costs for GPT-3.5 level systems dropped over 280-fold, significantly lowering entry barriers[cite: 50, 52, 108, 899, 901].",
+        "topic": "Economic Trends"
+    },
+    {
+        "question": "What does the 2025 report identify as a key trend in 'Responsible AI' (RAI) among corporations?",
+        "options": [
+            "Most companies have fully implemented standardized RAI evaluations.",
+            "A gap persists between companies recognizing RAI risks and taking meaningful action.",
+            "Corporations have abandoned RAI in favor of faster model deployment.",
+            "RAI is now entirely managed by government-mandated AI agents."
+        ],
+        "correct": "A gap persists between companies recognizing RAI risks and taking meaningful action.",
+         "explanation": "While risk recognition is growing, the implementation of standardized evaluations and concrete actions remains uneven[cite: 44, 45, 890, 891].",
+        "topic": "Responsible AI"
+    },
+    {
+        "question": "What is the trend for AI hardware according to the research cited in the report?",
+        "options": [
+            "Hardware is getting more expensive and less efficient over time.",
+            "Hardware performance is growing annually while costs are dropping and energy efficiency is improving.",
+            "Hardware development has reached a physical limit and stopped.",
+            "Energy efficiency is the only metric that is not improving."
+        ],
+        "correct": "Hardware performance is growing annually while costs are dropping and energy efficiency is improving.",
+         "explanation": "Performance grows 43% annually, costs drop 30%, and efficiency increases by 40%[cite: 115, 116, 899].",
+        "topic": "Infrastructure and Scaling"
+    },
+    {
+        "question": "Which development best illustrates AI's growing role in 'everyday life' in 2024?",
+        "options": [
+            "The move of technologies like robotaxis and AI medical devices from experimental labs to daily public use.",
+            "The use of AI exclusively for military simulations.",
+            "The complete replacement of the internet with AI-generated content.",
+            "A decrease in the number of people using AI tools for professional work."
+        ],
+        "correct": "The move of technologies like robotaxis and AI medical devices from experimental labs to daily public use.",
+         "explanation": "The report cites 223 FDA-approved devices and 150,000+ weekly robotaxi rides as evidence[cite: 33, 878, 879].",
+        "topic": "AI Integration and Society"
+    },
+    {
+        "question": "What is the 'test-time compute' approach and why is it significant in 2024?",
+        "options": [
+            "It is a way to make models smaller for mobile devices.",
+            "It allows models to 'think' longer and reason through outputs, dramatically boosting performance on complex tasks.",
+            "It is a method for reducing the carbon footprint of AI training.",
+            "It is a new law that restricts how much compute a company can use for testing."
+        ],
+        "correct": "It allows models to 'think' longer and reason through outputs, dramatically boosting performance on complex tasks.",
+         "explanation": "Models like OpenAI's o1 use this approach to significantly improve results in areas like mathematics[cite: 132, 133, 134].",
+        "topic": "Technical Innovations"
+    },
+    {
+        "question": "What has been the impact of AI on the global scientific community in 2024?",
+        "options": [
+            "AI has been largely ignored by major scientific bodies.",
+            "AI's importance was underscored by multiple Nobel Prizes for physics and chemistry and the Turing Award.",
+            "AI has replaced all human scientists in the field of protein folding.",
+            "The scientific community has called for a permanent halt to AI research."
+        ],
+        "correct": "AI's importance was underscored by multiple Nobel Prizes for physics and chemistry and the Turing Award.",
+         "explanation": "The recognition of AI's role in deep learning and protein folding shows its foundational impact on science[cite: 14, 66, 857, 919].",
+        "topic": "AI in Science and Medicine"
+    }
 ]
