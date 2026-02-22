@@ -2418,7 +2418,7 @@
             "To automate the creation of synthetic training data.",
             "To encrypt model weights for secure local deployment."
         ],
-        "correct": "Option 2",
+        "correct": "To allow models to iteratively reason through their outputs during inference.",
          "explanation": "Test-time compute, used in models like OpenAI's o1, allows systems to 'think' longer during the response phase to improve reasoning accuracy[cite: 132, 133].",
         "topic": "Machine Learning Techniques"
     },
@@ -2430,7 +2430,7 @@
             "SWE-bench",
             "HumanEval"
         ],
-        "correct": "Option 3",
+        "correct": "SWE-bench",
          "explanation": "SWE-bench tests advanced systems on their ability to resolve actual software engineering problems[cite: 875, 121].",
         "topic": "Testing and Evaluation"
     },
@@ -2442,7 +2442,7 @@
             "The performance gap between top open-weight and closed-weight models narrowed to just 1.7%.",
             "They became the only models capable of passing the Turing Test."
         ],
-        "correct": "Option 3",
+        "correct": "The performance gap between top open-weight and closed-weight models narrowed to just 1.7%.",
          "explanation": "Open-weight models rapidly closed the performance gap with proprietary closed models, dropping from an 8.0% difference to 1.7%[cite: 125, 126].",
         "topic": "Technical Performance Trends"
     },
@@ -2454,7 +2454,7 @@
             "The high cost of running a model against a specific test suite.",
             "The bias found within the questions of traditional evaluation sets."
         ],
-        "correct": "Option 2",
+        "correct": "The point where models achieve near-perfect scores, making the tests ineffective for differentiation.",
          "explanation": "Saturation occurs when traditional benchmarks like MMLU become too easy for frontier models, necessitating harder tests[cite: 136].",
         "topic": "Testing and Evaluation"
     },
@@ -2466,7 +2466,7 @@
             "PlanBench",
             "MMMU"
         ],
-        "correct": "Option 1",
+        "correct": "GPQA",
          "explanation": "GPQA is a challenging benchmark featuring experts-written science questions that are very difficult for non-experts[cite: 875, 121].",
         "topic": "Testing and Evaluation"
     },
@@ -2478,7 +2478,7 @@
             "It is six times more expensive and 30 times slower.",
             "It requires significantly less energy despite being slower."
         ],
-        "correct": "Option 3",
+        "correct": "It is six times more expensive and 30 times slower.",
          "explanation": "While more capable at reasoning, the o1 model is significantly slower and more costly than GPT-4o[cite: 135].",
         "topic": "Technical Performance Trends"
     },
@@ -2490,7 +2490,7 @@
             "35.5%",
             "8.8%"
         ],
-        "correct": "Option 3",
+        "correct": "35.5%",
          "explanation": "On BigCodeBench, AI systems currently achieve a 35.5% success rate, far below the 97% human standard[cite: 139].",
         "topic": "Testing and Evaluation"
     },
@@ -2502,7 +2502,7 @@
             "Dataset size",
             "Energy efficiency"
         ],
-        "correct": "Option 1",
+        "correct": "Training compute",
          "explanation": "Training compute requirements for notable models are doubling approximately every five months[cite: 106].",
         "topic": "Machine Learning Techniques"
     },
@@ -2514,7 +2514,7 @@
             "HumanEval",
             "HELM Safety"
         ],
-        "correct": "Option 2",
+        "correct": "PlanBench",
          "explanation": "PlanBench is a benchmark used to test complex reasoning and planning capabilities[cite: 920].",
         "topic": "Testing and Evaluation"
     },
@@ -2526,7 +2526,7 @@
             "67.3 percentage points",
             "9.3 percentage points"
         ],
-        "correct": "Option 3",
+        "correct": "67.3 percentage points",
          "explanation": "AI performance on SWE-bench saw a massive leap of 67.3 percentage points in a single year[cite: 876, 123].",
         "topic": "Technical Performance Trends"
     },
@@ -2538,7 +2538,7 @@
             "Humanity's Last Exam",
             "FrontierMath"
         ],
-        "correct": "Option 2",
+        "correct": "FACTS",
          "explanation": "FACTS is one of the newer benchmarks designed to evaluate model factuality and safety[cite: 889].",
         "topic": "Testing and Evaluation"
     },
@@ -2550,7 +2550,7 @@
             "The top two models are separated by just 0.7% on leaderboards.",
             "Most models are now failing traditional tests."
         ],
-        "correct": "Option 3",
+        "correct": "The top two models are separated by just 0.7% on leaderboards.",
          "explanation": "The AI landscape is increasingly competitive, with the top two models now separated by only 0.7%[cite: 131].",
         "topic": "Technical Performance Trends"
     },
@@ -2562,7 +2562,7 @@
             "GPU clock speeds",
             "Carbon offset credits"
         ],
-        "correct": "Option 2",
+        "correct": "Training datasets",
          "explanation": "Dataset sizes for training Large Language Models are doubling every eight months[cite: 106].",
         "topic": "Machine Learning Techniques"
     },
@@ -2574,7 +2574,7 @@
             "Rigorous academic knowledge where even top systems currently struggle.",
             "The level of public optimism regarding AI's benefits."
         ],
-        "correct": "Option 3",
+        "correct": "Rigorous academic knowledge where even top systems currently struggle.",
          "explanation": "Humanity's Last Exam is a rigorous academic test where the top system scores just 8.80%[cite: 137].",
         "topic": "Testing and Evaluation"
     },
@@ -2586,7 +2586,7 @@
             "It has been made harder by adding a physical robotics component.",
             "It is the only test China uses to evaluate its models."
         ],
-        "correct": "Option 2",
+        "correct": "It is no longer an ambitious goal, as it has been surpassed by sophisticated systems.",
          "explanation": "The Turing Test is no longer considered an ambitious goal for today's sophisticated AI systems[cite: 858].",
         "topic": "Technical Performance Trends"
     },
@@ -2598,7 +2598,7 @@
             "To measure the speed of mathematical computations.",
             "To test AI's ability to explain math to K-12 students."
         ],
-        "correct": "Option 2",
+        "correct": "To evaluate AI on extremely complex mathematics problems.",
          "explanation": "FrontierMath is a complex benchmark where AI systems solve only 2% of the problems[cite: 138].",
         "topic": "Testing and Evaluation"
     },
@@ -2610,7 +2610,7 @@
             "China",
             "South Korea"
         ],
-        "correct": "Option 3",
+        "correct": "China",
          "explanation": "China produced 23.2% of AI publications and 22.6% of citations in 2023[cite: 98].",
         "topic": "Machine Learning Techniques"
     },
@@ -2622,7 +2622,7 @@
             "Energy efficiency is increasing by 40% annually.",
             "Efficiency only improves when models are smaller."
         ],
-        "correct": "Option 3",
+        "correct": "Energy efficiency is increasing by 40% annually.",
          "explanation": "Hardware energy efficiency has been improving at a rate of 40% each year[cite: 899, 116].",
         "topic": "Technical Performance Trends"
     },
@@ -2634,7 +2634,7 @@
             "Phi-3 Mini",
             "Gemini 1.5 Flash"
         ],
-        "correct": "Option 3",
+        "correct": "Phi-3 Mini",
         "explanation": "Phi-3 Mini achieved the same 60% MMLU threshold as much larger models, marking a 142-fold size reduction.",
         "topic": "Machine Learning Techniques"
     },
@@ -2646,7 +2646,7 @@
             "They cannot handle multi-modal inputs like images.",
             "They require constant internet connection to reason."
         ],
-        "correct": "Option 2",
+        "correct": "They fail to reliably solve logic tasks even with provably correct solutions.",
          "explanation": "AI models still struggle with logic and reasoning tasks in benchmarks like PlanBench, which limits their use where precision is critical[cite: 68, 921].",
         "topic": "Technical Performance Trends"
     }
