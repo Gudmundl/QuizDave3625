@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAVE3625 Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="quiz-container">
+        <div id="timer" style="text-align: right; margin-bottom: 20px; font-size: 18px;">
+            Time remaining: <span id="time">60:00</span>
+        </div>
+        <div id="quiz">
+            <div id="question-container">
+                <p class="question"></p>
+                <div class="options"></div>
+            </div>
+            <button class="next-question" id="next-question" style="display: none;">Next Question</button>
+            <button class="finish-quiz" id="finish-quiz" style="margin-left: 10px;">
+                Finish Quiz
+            </button>
+        </div>
+        <div id="result" style="display: none;">
+            <h2>Quiz Completed!</h2>
+            <p id="score"></p>
+            <button onclick="restartQuiz()">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        let questions = []; // Questions will be loaded from JSON
+        let currentQuestion = 0;
+        let score = 0;
+        let questionsAttempted = 0;  // Add this variable to track attempted questions
+        let timeLeft = 60 * 60; // 60 minutes in seconds
+        let timerInterval;
+        let topicPerformance = {};  // To track performance by topic
+        let topicAttempts = {};    // To track attempts by topic
+        let selectedQuestionCount = 0;
+        let topicQuestions = {};
+        let isReviewQuiz = false;
+        let askedQuestions = new Set();  // Track all questions that have been asked
+        let correctlyAnswered = new Set();  // Track questions answered correctly
+        let userQuestionCount = 0;  // Store user's desired question count
+
+        const questionElement = document.querySelector(".question");
+        const optionsElement = document.querySelector(".options");
+        const nextButton = document.getElementById("next-question");
+        const resultElement = document.getElementById("result");
+        const scoreElement = document.getElementById("score");
+
+        // Modify the fetch to bypass cache
+        fetch("./DAVE3625.json", {
+            cache: 'no-store',  // Forces a network request instead of using cached data
+            headers: {
+                'Cache-Control': 'no-cache',
+                'Pragma': 'no-cache'
+            }
+        })
+            .then(response => response.json())
+            .then(data => {
+                questions = data;
+                console.log("Total questions loaded:", questions.length);
+                
+                // Create score tracker after questions are loaded
+                document.querySelector(".quiz-container").insertAdjacentHTML('afterbegin', `
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                        <div id="score-tracker" style="text-align: left; font-size: 18px;">
+                            Score: <span id="current-score">0</span>/<span id="total-questions">0</span>
+                        </div>
+                        <div id="total-tracker" style="text-align: right; font-size: 18px;">
+                            Total Questions: ${questions.length}
+                        </div>
+                    </div>
+                `);
+                
+                // Update the question count input max value
+                const questionCountInput = document.getElementById("question-count");
+                if (questionCountInput) {
+                    questionCountInput.max = questions.length;
+                    questionCountInput.value = Math.min(10, questions.length); // Default to 10 or max available
+                }
+                
+                // Initialize the quiz
+                initializeQuiz();
+            })
+            .catch(error => {
+                console.error("Error loading questions:", error);
+                document.querySelector(".quiz-container").innerHTML = 
+                    "<p>Unable to load questions. Check your JSON file or browser console for errors.</p>";
+            });
+
+        // Shuffle the questions array for randomness
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+
+        // Load a question and its options
+        function loadQuestion() {
+            if (currentQuestion >= questions.length) {
+                finishQuiz();
+                return;
+            }
+            
+            const current = questions[currentQuestion];
+            
+            // Calculate progress based on completed questions
+            const progress = (currentQuestion / questions.length) * 100;
+            
+            // Add progress bar and topic indicator
+            questionElement.innerHTML = `
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: ${progress}%">
+                        <span>${Math.round(progress)}%</span>
+                    </div>
+                </div>
+                <div class="topic-indicator">
+                    Topic: ${current.topic}
+                </div>
+                ${current.question}
+            `;
+            
+            optionsElement.innerHTML = "";
+            nextButton.style.display = "none";
+
+            // Remove any existing explanation box
+            const existingExplanation = document.querySelector('.explanation-box');
+            if (existingExplanation) {
+                existingExplanation.remove();
+            }
+
+            // Create array of options and mark the correct one
+            let options = current.options.map(option => ({
+                text: option,
+                isCorrect: option === current.correct
+            }));
+            
+            // Shuffle options
+            for (let i = options.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [options[i], options[j]] = [options[j], options[i]];
+                if (Math.random() < 0.5) {
+                    const k = Math.floor(Math.random() * (i + 1));
+                    [options[i], options[k]] = [options[k], options[i]];
+                }
+            }
+            
+            // Create buttons for each option
+            options.forEach((option, index) => {
+                const button = document.createElement("button");
+                button.textContent = option.text;
+                button.classList.add("option");
+                button.addEventListener("click", () => selectAnswer(index, button, current, option.isCorrect));
+                optionsElement.appendChild(button);
+            });
+
+            // Update score and question number display
+            document.getElementById('current-score').textContent = score;
+            document.getElementById('total-questions').textContent = questionsAttempted;
+        }
+
+        // Handle the answer selection
+        function selectAnswer(selectedIndex, button, question, isCorrect) {
+            // Disable all buttons
+            const buttons = document.querySelectorAll('.option');
+            buttons.forEach(btn => btn.disabled = true);
+
+            // Update topic tracking
+            const topic = question.topic;
+            topicAttempts[topic] = (topicAttempts[topic] || 0) + 1;
+
+            if (isCorrect) {
+                button.classList.add("correct");
+                score++;
+                topicPerformance[topic] = (topicPerformance[topic] || 0) + 1;
+                correctlyAnswered.add(question.question);
+            } else {
+                button.classList.add("incorrect");
+                // Find and highlight the correct answer
+                buttons.forEach(btn => {
+                    if (btn.textContent === question.correct) {
+                        btn.classList.add("correct");
+                    }
+                });
+            }
+
+            askedQuestions.add(question.question);
+            questionsAttempted++;
+
+            // Update score display
+            document.getElementById('current-score').textContent = score;
+            document.getElementById('total-questions').textContent = questionsAttempted;
+
+            // Show explanation
+            const explanationBox = document.createElement("div");
+            explanationBox.classList.add("explanation-box");
+            explanationBox.innerHTML = `<strong>Explanation:</strong> ${question.explanation}`;
+            optionsElement.appendChild(explanationBox);
+
+            nextButton.style.display = "block";
+        }
+
+        // Move to the next question or show results
+        nextButton.onclick = () => {
+            currentQuestion++;
+            if (currentQuestion < questions.length) {
+                loadQuestion();
+            } else {
+                finishQuiz();
+            }
+        };
+
+        // Display the final score
+        function finishQuiz() {
+            // Hide quiz container
+            document.getElementById("quiz").style.display = "none";
+            
+            // Show results
+            resultElement.style.display = "block";
+            showResult();
+        }
+
+        function showResult() {
+            const percentage = questionsAttempted > 0 
+                ? Math.round((score/questionsAttempted) * 100) 
+                : 0;
+            
+            // Generate topic analysis
+            let topicAnalysis = generateTopicAnalysis();
+            
+            // Calculate actual totals (without duplicates)
+            const totalQuestions = questions.length;
+            const totalMastered = correctlyAnswered.size;
+            const remainingQuestions = Math.max(0, totalQuestions - totalMastered);
+            
+            // Collect incorrect questions from this session
+            const incorrectQuestions = questions.filter(q => 
+                askedQuestions.has(q.question) && !correctlyAnswered.has(q.question)
+            );
+            
+            // Format incorrect questions for easy copying
+            const incorrectQuestionsText = incorrectQuestions.map(q => `
+Question: ${q.question}
+Options:
+${q.options.map(opt => `- ${opt}`).join('\n')}
+Correct Answer: ${q.correct}
+Topic: ${q.topic}
+Explanation: ${q.explanation}
+`).join('\n---\n');
+
+            // Make sure resultElement exists and is accessible
+            if (!resultElement) {
+                console.error('Result element not found');
+                return;
+            }
+            
+            resultElement.innerHTML = `
+                <h2>Quiz Completed!</h2>
+                <p>Your final score: ${score}/${questionsAttempted} (${percentage}%)</p>
+                
+                <div class="topic-analysis">
+                    <h3>Performance by Topic:</h3>
+                    ${topicAnalysis.html}
+                </div>
+                
+                <div class="overall-progress">
+                    <h3>Overall Progress:</h3>
+                    <p>Questions Mastered: ${totalMastered}/${totalQuestions}</p>
+                    <p>Questions Remaining: ${remainingQuestions}</p>
+                </div>
+                
+                ${incorrectQuestions.length > 0 ? `
+                    <div class="incorrect-questions">
+                        <h3>Questions to Review:</h3>
+                        <textarea readonly style="width: 100%; height: 200px; margin: 10px 0; padding: 10px; white-space: pre-wrap;">${incorrectQuestionsText}</textarea>
+                        <button onclick="copyIncorrectQuestions()">Copy to Clipboard</button>
+                    </div>
+                ` : ''}
+                
+                <div class="quiz-options">
+                    <label class="review-mode">
+                        <input type="checkbox" id="focus-weak-topics" ${isReviewQuiz ? 'checked' : ''}>
+                        Focus on topics that need improvement
+                    </label>
+                    ${remainingQuestions > 0 ? `
+                        <button onclick="startNextQuiz()">Continue Learning (${userQuestionCount} questions)</button>
+                    ` : '<p>Congratulations! You have mastered all questions!</p>'}
+                    <button onclick="restartNewQuiz()">Start Fresh Quiz</button>
+                </div>
+            `;
+        }
+
+        // Restart the quiz
+        function restartQuiz() {
+            currentQuestion = 0;
+            score = 0;
+            questionsAttempted = 0;
+            timeLeft = 60 * 60;
+            // Reset topic tracking
+            topicPerformance = {};
+            topicAttempts = {};
+            
+            resultElement.style.display = "none";
+            document.getElementById("quiz").style.display = "block";
+            document.getElementById('current-score').textContent = '0';
+            document.getElementById('total-questions').textContent = '0';
+            clearInterval(timerInterval);
+            startTimer();
+            shuffleArray(questions);
+            loadQuestion();
+        }
+
+        // Timer function
+        function startTimer() {
+            const timerDisplay = document.getElementById('time');
+            timerInterval = setInterval(() => {
+                const minutes = Math.floor(timeLeft / 60);
+                const seconds = timeLeft % 60;
+                
+                timerDisplay.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    showResult();
+                } else {
+                    timeLeft--;
+                }
+            }, 1000);
+        }
+
+        // Add event listener for the finish button
+        document.getElementById('finish-quiz').addEventListener('click', () => {
+            if (confirm('Are you sure you want to finish the quiz? This will end your attempt.')) {
+                showResult();
+            }
+        });
+
+        // Add function to generate topic analysis
+        function generateTopicAnalysis() {
+            let topicHtml = '';
+            let strengths = '';
+            let needsImprovement = '';
+            
+            for (const topic in topicAttempts) {
+                const attempts = topicAttempts[topic];
+                const correct = topicPerformance[topic] || 0;
+                const percentage = Math.round((correct / attempts) * 100);
+                
+                // Determine color based on percentage
+                let barColor;
+                if (percentage < 40) {
+                    barColor = '#dc3545'; // red
+                } else if (percentage < 75) {
+                    barColor = '#ffc107'; // yellow
+                } else {
+                    barColor = '#28a745'; // green
+                }
+                
+                topicHtml += `
+                    <div class="topic-row">
+                        ${topic}
+                        <div class="bar-container">
+                            <div class="bar" style="width: ${percentage}%; background-color: ${barColor}"></div>
+                        </div>
+                        ${percentage}% (${correct}/${attempts})
+                    </div>
+                `;
+                
+                // Generate feedback lists
+                if (percentage < 70) {
+                    needsImprovement += `<li>${topic} (${percentage}%)</li>`;
+                } else {
+                    strengths += `<li>${topic} (${percentage}%)</li>`;
+                }
+            }
+            
+            return {
+                html: topicHtml,
+                needsImprovement: needsImprovement || '<li>No specific areas identified for improvement</li>',
+                strengths: strengths || '<li>Keep practicing to identify your strengths</li>'
+            };
+        }
+
+        // Add function to organize questions by topic
+        function organizeQuestionsByTopic() {
+            topicQuestions = {};
+            questions.forEach(q => {
+                if (!topicQuestions[q.topic]) {
+                    topicQuestions[q.topic] = [];
+                }
+                topicQuestions[q.topic].push(q);
+            });
+        }
+
+        // Modify the initialization code to just ask for question count
+        function initializeQuiz() {
+            organizeQuestionsByTopic();
+            
+            document.getElementById("quiz").style.display = "none";
+            document.body.insertAdjacentHTML('afterbegin', `
+                <div id="quiz-setup" class="quiz-container">
+                    <h2>DAVE3625 Quiz Setup</h2>
+                    <p>How many questions would you like to answer?</p>
+                    <input type="number" id="question-count" min="1" max="${questions.length}" value="10">
+                    <button onclick="startQuizWithCount()">Start Quiz</button>
+                </div>
+            `);
+        }
+
+        // Modified function to select balanced questions for initial quiz
+        function selectBalancedQuestions(totalQuestions) {
+            const topics = Object.keys(topicQuestions);
+            const baseQuestionsPerTopic = Math.floor(totalQuestions / topics.length);
+            let remainingQuestions = totalQuestions - (baseQuestionsPerTopic * topics.length);
+            
+            let selectedQuestions = [];
+            
+            // First, add base number of questions from each topic
+            topics.forEach(topic => {
+                const topicQs = [...topicQuestions[topic]].filter(q => !askedQuestions.has(q.question));
+                shuffleArray(topicQs);
+                selectedQuestions.push(...topicQs.slice(0, baseQuestionsPerTopic));
+            });
+            
+            // Then distribute remaining questions one per topic
+            if (remainingQuestions > 0) {
+                const remainingTopics = [...topics];
+                shuffleArray(remainingTopics);
+                
+                for (let i = 0; i < remainingQuestions && i < remainingTopics.length; i++) {
+                    const topic = remainingTopics[i];
+                    const availableQuestions = topicQuestions[topic].filter(
+                        q => !askedQuestions.has(q.question) && !selectedQuestions.includes(q)
+                    );
+                    if (availableQuestions.length > 0) {
+                        selectedQuestions.push(availableQuestions[0]);
+                    }
+                }
+            }
+            
+            shuffleArray(selectedQuestions);
+            return selectedQuestions;
+        }
+
+        // Modified function to select review questions with bias
+        function selectReviewQuestions(totalQuestions) {
+            // Get all topics and their weights based on performance
+            const topics = Object.keys(topicPerformance);
+            const weights = topics.map(topic => {
+                const performance = (topicPerformance[topic] || 0) / (topicAttempts[topic] || 1);
+                // Lower performance = higher weight (more likely to be selected)
+                return {
+                    topic,
+                    weight: Math.max(0.1, 1 - performance) // Even perfect topics get small weight
+                };
+            });
+            
+            // Sort topics by weight (descending)
+            weights.sort((a, b) => b.weight - a.weight);
+            
+            // Calculate questions per topic based on weights
+            const totalWeight = weights.reduce((sum, w) => sum + w.weight, 0);
+            const questionsPerTopic = weights.map(w => ({
+                topic: w.topic,
+                count: Math.max(1, Math.floor((w.weight / totalWeight) * totalQuestions))
+            }));
+            
+            let selectedQuestions = [];
+            
+            // Select questions prioritizing topics with lower performance
+            for (const {topic, count} of questionsPerTopic) {
+                const availableQuestions = topicQuestions[topic].filter(
+                    q => !correctlyAnswered.has(q.question) && !selectedQuestions.includes(q)
+                );
+                
+                if (availableQuestions.length > 0) {
+                    shuffleArray(availableQuestions);
+                    selectedQuestions.push(...availableQuestions.slice(0, count));
+                }
+            }
+            
+            // If we need more questions, add from any remaining topics
+            if (selectedQuestions.length < totalQuestions) {
+                const remainingQuestions = questions.filter(q => 
+                    !correctlyAnswered.has(q.question) && 
+                    !selectedQuestions.includes(q)
+                );
+                
+                shuffleArray(remainingQuestions);
+                selectedQuestions.push(...remainingQuestions.slice(0, totalQuestions - selectedQuestions.length));
+            }
+            
+            // Ensure we don't exceed the requested number of questions
+            if (selectedQuestions.length > totalQuestions) {
+                selectedQuestions = selectedQuestions.slice(0, totalQuestions);
+            }
+            
+            shuffleArray(selectedQuestions);
+            return selectedQuestions;
+        }
+
+        // Add function to start review quiz
+        function startReviewQuiz() {
+            isReviewQuiz = true;
+            const reviewQuestions = selectReviewQuestions(selectedQuestionCount);
+            questions = reviewQuestions;
+            restartQuiz();
+        }
+
+        // Add function to start quiz with selected count
+        function startQuizWithCount() {
+            userQuestionCount = parseInt(document.getElementById("question-count").value);
+            selectedQuestionCount = userQuestionCount;
+            
+            const selectedQuestions = isReviewQuiz ? 
+                selectReviewQuestions(userQuestionCount) : 
+                selectBalancedQuestions(userQuestionCount);
+            
+            questions = selectedQuestions;
+            document.getElementById("quiz-setup").style.display = "none";
+            document.getElementById("quiz").style.display = "block";
+            restartQuiz();
+        }
+
+        // Add function to start fresh quiz
+        function restartNewQuiz() {
+            askedQuestions.clear();
+            correctlyAnswered.clear();
+            isReviewQuiz = false;
+            startQuizWithCount();
+        }
+
+        // Modify startQuizWithCount to store user's question count
+        function startQuizWithCount() {
+            userQuestionCount = parseInt(document.getElementById("question-count").value);
+            selectedQuestionCount = userQuestionCount;
+            
+            const selectedQuestions = isReviewQuiz ? 
+                selectReviewQuestions(userQuestionCount) : 
+                selectBalancedQuestions(userQuestionCount);
+            
+            questions = selectedQuestions;
+            document.getElementById("quiz-setup").style.display = "none";
+            document.getElementById("quiz").style.display = "block";
+            restartQuiz();
+        }
+
+        // Add function to copy incorrect questions to clipboard
+        function copyIncorrectQuestions() {
+            const textarea = document.querySelector('.incorrect-questions textarea');
+            textarea.select();
+            document.execCommand('copy');
+            
+            // Show feedback
+            const button = document.querySelector('.incorrect-questions button');
+            const originalText = button.textContent;
+            button.textContent = 'Copied!';
+            setTimeout(() => {
+                button.textContent = originalText;
+            }, 2000);
+        }
+
+        // Add event listener for finish quiz button
+        document.addEventListener('DOMContentLoaded', function() {
+            const finishButton = document.getElementById('finish-quiz');
+            if (finishButton) {
+                finishButton.addEventListener('click', finishQuiz);
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            // Number keys 1-4 for options
+            if (e.key >= '1' && e.key <= '4') {
+                const optionIndex = parseInt(e.key) - 1;
+                const optionButtons = document.querySelectorAll('.option');
+                if (optionButtons[optionIndex] && !optionButtons[optionIndex].disabled) {
+                    optionButtons[optionIndex].click();
+                }
+            }
+            // Space or Enter for next question
+            if ((e.key === ' ' || e.key === 'Enter') && 
+                document.getElementById('next-question').style.display === 'block') {
+                nextQuestion();
+            }
+        });
+
+        // Add new function to handle starting the next quiz
+        function startNextQuiz() {
+            isReviewQuiz = document.getElementById('focus-weak-topics').checked;
+            startQuizWithCount();
+        }
+    </script>
+</body>
+
+</html>
