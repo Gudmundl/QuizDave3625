@@ -27,13 +27,13 @@ body {
     width: 100%;
     border: none;
     border-radius: 5px;
-    background-color: #00acc1;
-    color: rgb(0, 0, 0);
+    background-color: #148594c0;
+    color: rgb(246, 247, 238);
     cursor: pointer;
 }
 
 .options button:hover {
-    background-color: #00838f;
+    background-color: #08636b;
 }
 
 .options button.correct {
@@ -47,7 +47,7 @@ body {
 .next-question {
     margin-top: 20px;
     padding: 10px;
-    background-color: #00acc1;
+    background-color: #148594c0;
     color: white;
     font-size: 16px;
     border: none;
@@ -56,7 +56,7 @@ body {
 }
 
 .next-question:hover {
-    background-color: #00838f;
+    background-color: #08636b;
 }
 
 #timer {
@@ -115,7 +115,7 @@ body {
     padding: 15px;
     border-radius: 5px;
     background-color: #fffde7;
-    border-left: 4px solid #00acc1;
+    border-left: 4px solid #148594c0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
@@ -126,7 +126,7 @@ body {
 }
 
 .explanation-content strong {
-    color: #00acc1;
+    color: #148594c0;
 }
 
 .finish-quiz {
@@ -266,7 +266,7 @@ body {
 }
 
 .incorrect-questions button {
-    background: #00acc1;
+    background: #148594c0;
     color: white;
     border: none;
     padding: 8px 16px;
@@ -275,7 +275,7 @@ body {
 }
 
 .incorrect-questions button:hover {
-    background: #00838f;
+    background: #08636b;
 }
 
 .topic-indicator {
