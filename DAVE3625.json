@@ -1927,4 +1927,727 @@
          "explanation": "The recognition of AI's role in deep learning and protein folding shows its foundational impact on science[cite: 14, 66, 857, 919].",
         "topic": "AI in Science and Medicine"
     }
+,
+    {
+        "question": "What is the primary trend regarding the performance gap between top open-weight and closed-weight models in 2024?",
+        "options": [
+            "Closed-weight models have doubled their performance lead.",
+            "Open-weight models are rapidly catching up to proprietary leaders.",
+            "Open-weight development has ceased due to high costs.",
+            "There is no longer any difference in how models are trained."
+        ],
+        "correct": "Open-weight models are rapidly catching up to proprietary leaders.",
+        "explanation": "The report highlights that the disparity between open and closed models narrowed to a negligible margin in 2024, democratizing access to frontier-level AI.",
+        "topic": "Strategic Trends in Research"
+    },
+    {
+        "question": "How has the 'notable' AI model development landscape shifted between industry and academia?",
+        "options": [
+            "Academia has regained the lead in producing frontier models.",
+            "Industry dominance has intensified, producing the vast majority of notable models.",
+            "Government labs now lead in AI model production.",
+            "Non-profits have become the primary source of AI innovation."
+        ],
+        "correct": "Industry dominance has intensified, producing the vast majority of notable models.",
+        "explanation": "Industry's share of notable model development reached nearly 90% in 2024, driven by the massive compute resources required.",
+        "topic": "Industry vs. Academia"
+    },
+    {
+        "question": "What does the 2025 report identify as a key trend in 'Model Efficiency'?",
+        "options": [
+            "Models must always get larger to improve.",
+            "Smaller models are achieving performance levels that previously required massive systems.",
+            "Algorithmic efficiency is declining as datasets grow.",
+            "Inference costs are rising despite smaller model sizes."
+        ],
+        "correct": "Smaller models are achieving performance levels that previously required massive systems.",
+        "explanation": "The report highlights a significant 'reduction' trend where compact models now match the benchmarks of much larger predecessors from just two years ago.",
+        "topic": "Model Efficiency"
+    },
+    {
+        "question": "In the context of AI benchmarks, what is meant by the term 'saturation'?",
+        "options": [
+            "Models are processing too much data for the tests to handle.",
+            "Standard tests have become too easy for frontier models, losing their ability to differentiate performance.",
+            "There are too many benchmarks for researchers to track.",
+            "Public benchmarks have been completely replaced by private corporate testing."
+        ],
+        "correct": "Standard tests have become too easy for frontier models, losing their ability to differentiate performance.",
+        "explanation": "The saturation of traditional benchmarks like MMLU has forced the creation of much harder tests to measure true progress.",
+        "topic": "Technical Performance Metrics"
+    },
+    {
+        "question": "What trend is emerging in the way AI models 'reason' through complex problems?",
+        "options": [
+            "Models are relying more on simple pattern matching.",
+            "A shift toward 'test-time compute' allows models to spend more time thinking before answering.",
+            "Reasoning has been de-prioritized in favor of creative writing.",
+            "Models are now hard-coded with logical rules to prevent errors."
+        ],
+        "correct": "A shift toward 'test-time compute' allows models to spend more time thinking before answering.",
+        "explanation": "Newer models use additional compute during the inference phase to iteratively reason, which significantly boosts math and logic performance.",
+        "topic": "Technical Innovation"
+    },
+    {
+        "question": "What is the general trend for global AI private investment outside of the United States?",
+        "options": [
+            "Investment is increasing everywhere at the same rate.",
+            "Most regions are seeing a decline or stagnation compared to the massive growth in the U.S.",
+            "China has surpassed the U.S. in total private investment.",
+            "Private investment has been replaced by government funding globally."
+        ],
+        "correct": "Most regions are seeing a decline or stagnation compared to the massive growth in the U.S.",
+        "explanation": "While the U.S. saw a massive investment surge, other major regions like China and the UK experienced significant declines or much slower growth.",
+        "topic": "Economic Trends"
+    },
+    {
+        "question": "How is the public's perception of AI evolving globally as of 2024?",
+        "options": [
+            "Public sentiment is becoming universally negative.",
+            "A sharp divide exists between high optimism in emerging economies and caution in Western nations.",
+            "Optimism is highest in the U.S. and Europe.",
+            "Sentiment is uniform across all countries due to social media."
+        ],
+        "correct": "A sharp divide exists between high optimism in emerging economies and caution in Western nations.",
+        "explanation": "The report shows that countries like China and Indonesia remain highly optimistic, while Western nations express more concern over risks.",
+        "topic": "Public Opinion"
+    },
+    {
+        "question": "What is a major bottleneck identified for AI expansion in developing nations?",
+        "options": [
+            "A lack of interest from the general public.",
+            "Fundamental infrastructure gaps, such as reliable access to electricity.",
+            "High costs of open-source software licenses.",
+            "Governmental bans on all automated systems."
+        ],
+        "correct": "Fundamental infrastructure gaps, such as reliable access to electricity.",
+        "explanation": "The report notes that basic infrastructure remains the primary hurdle for AI adoption in regions like Africa.",
+        "topic": "Global Infrastructure"
+    },
+    {
+        "question": "Regarding AI hardware, what trend is described in the 2025 report summary?",
+        "options": [
+            "Hardware is becoming more specialized and less efficient.",
+            "The performance of AI chips is growing annually while costs per unit of performance are dropping.",
+            "The industry has switched back to general-purpose CPUs for training.",
+            "Energy efficiency for AI chips has reached a physical limit and stopped improving."
+        ],
+        "correct": "The performance of AI chips is growing annually while costs per unit of performance are dropping.",
+        "explanation": "Hardware continues to follow a trend of increasing performance and declining costs, though total energy use remains high.",
+        "topic": "Hardware Trends"
+    },
+    {
+        "question": "What does the 2025 report conclude about the use of AI in scientific research?",
+        "options": [
+            "AI is primarily used for administrative tasks in science.",
+            "AI is becoming a transformative tool for core discoveries in fields like chemistry and physics.",
+            "Most scientists are moving away from AI due to reliability concerns.",
+            "AI has not yet contributed to any major scientific awards."
+        ],
+        "correct": "AI is becoming a transformative tool for core discoveries in fields like chemistry and physics.",
+        "explanation": "The recognition of AI-driven breakthroughs with Nobel Prizes in 2024 signals its fundamental role in modern science.",
+        "topic": "AI in Science"
+    },
+    {
+        "question": "What is the trend for 'Inference Costs' (running AI models) as of late 2024?",
+        "options": [
+            "Costs are rising due to model complexity.",
+            "Costs have plummeted, making advanced AI significantly more accessible to small businesses.",
+            "Inference is now free for all users globally.",
+            "Costs have stayed the same since the release of GPT-3."
+        ],
+        "correct": "Costs have plummeted, making advanced AI significantly more accessible to small businesses.",
+        "explanation": "Massive reductions in inference costs (over 200-fold in some cases) have lowered the barriers to entry for AI integration.",
+        "topic": "Economic Trends"
+    },
+    {
+        "question": "How has AI regulation changed at the governmental level in 2024?",
+        "options": [
+            "Regulation has decreased to encourage faster innovation.",
+            "There has been a surge in AI-related legislative activity and executive rulemaking globally.",
+            "Governments have decided to let AI companies self-regulate entirely.",
+            "Most countries have banned AI in the public sector."
+        ],
+        "correct": "There has been a surge in AI-related legislative activity and executive rulemaking globally.",
+        "explanation": "The report documents a significant rise in AI-specific laws and regulatory actions by federal agencies.",
+        "topic": "Policy and Governance"
+    },
+    {
+        "question": "What is the primary concern regarding 'Responsible AI' within corporations as of 2024?",
+        "options": [
+            "Companies are over-investing in safety at the expense of performance.",
+            "There is a gap between acknowledging AI risks and implementing concrete safety protocols.",
+            "Corporations have largely solved the problem of algorithmic bias.",
+            "Responsible AI is no longer a priority for major tech firms."
+        ],
+        "correct": "There is a gap between acknowledging AI risks and implementing concrete safety protocols.",
+        "explanation": "While risk awareness is up, the standardized implementation of responsible AI practices remains inconsistent across industries.",
+        "topic": "Responsible AI"
+    },
+    {
+        "question": "What major trend is observed in 'Multi-modal' AI systems?",
+        "options": [
+            "Models are becoming more specialized, only handling text.",
+            "Native multi-modality—processing text, audio, and video together—is becoming the new standard.",
+            "Video generation has been separated from language models for safety.",
+            "Multi-modal models have proven to be less efficient than single-mode ones."
+        ],
+        "correct": "Native multi-modality—processing text, audio, and video together—is becoming the new standard.",
+        "explanation": "Frontier models are increasingly designed to understand and generate across all media types within a single architecture.",
+        "topic": "Technical Trends"
+    },
+    {
+        "question": "How is AI impacting the software engineering field according to the 2025 report?",
+        "options": [
+            "AI has led to a decrease in coding productivity.",
+            "AI agents are showing massive leaps in solving real-world software engineering tasks.",
+            "The use of AI in coding has been banned by most major tech companies.",
+            "AI is only useful for writing documentation, not actual code."
+        ],
+        "correct": "AI agents are showing massive leaps in solving real-world software engineering tasks.",
+        "explanation": "Performance on coding benchmarks like SWE-bench saw unprecedented growth, indicating a shift toward more autonomous coding assistants.",
+        "topic": "AI in Software Engineering"
+    },
+    {
+        "question": "What trend is emerging in 'National AI Strategies' globally?",
+        "options": [
+            "Countries are focusing less on AI and more on manual labor.",
+            "A shift toward building 'Sovereign AI' through massive national infrastructure investments.",
+            "Nations are agreeing to stop all AI development to protect jobs.",
+            "AI strategies are focusing only on banning the technology in schools."
+        ],
+        "correct": "A shift toward building 'Sovereign AI' through massive national infrastructure investments.",
+        "explanation": "Countries are increasingly treating AI compute and data as critical national resources, leading to multi-billion dollar domestic projects.",
+        "topic": "Policy and Governance"
+    },
+    {
+        "question": "What is the trend regarding the energy consumption of AI training?",
+        "options": [
+            "Energy use is decreasing significantly due to better chips.",
+            "The power required for training frontier models is doubling annually.",
+            "AI training has become carbon-neutral across the entire industry.",
+            "Governments have successfully capped AI energy use."
+        ],
+        "correct": "The power required for training frontier models is doubling annually.",
+        "explanation": "Despite efficiency gains, the massive scale of training compute means the total power requirement continues to climb rapidly.",
+        "topic": "Environmental Impact"
+    },
+    {
+        "question": "In terms of worker productivity, what does the report highlight?",
+        "options": [
+            "AI only benefits top-tier management.",
+            "AI has the potential to bridge skill gaps by helping lower-skilled workers more significantly.",
+            "Productivity has dropped as workers spend too much time 'fixing' AI errors.",
+            "There is no evidence that AI helps with professional tasks."
+        ],
+        "correct": "AI has the potential to bridge skill gaps by helping lower-skilled workers more significantly.",
+        "explanation": "Studies cited in the report suggest that AI tools often provide a greater relative boost to less-experienced employees.",
+        "topic": "Economy and Workforce"
+    },
+    {
+        "question": "What shift has occurred in the accessibility of advanced medical AI tools?",
+        "options": [
+            "They are being restricted to research labs only.",
+            "There is a rapid increase in the number of AI-enabled medical devices approved for clinical use.",
+            "Medical AI has been proven to be less accurate than human-only diagnosis.",
+            "The cost of medical AI has made it inaccessible to most hospitals."
+        ],
+        "correct": "There is a rapid increase in the number of AI-enabled medical devices approved for clinical use.",
+        "explanation": "The steady rise in FDA approvals marks the transition of AI from a theoretical tool to a standard clinical resource.",
+        "topic": "AI in Medicine"
+    },
+    {
+        "question": "What is the primary conclusion regarding AI 'Safety' research in the 2025 summary?",
+        "options": [
+            "AI models are now 100% safe for all high-stakes tasks.",
+            "Reliable safety evaluations and the prevention of hallucinations remain unsolved frontier challenges.",
+            "Safety research has been largely completed.",
+            "Companies have stopped doing safety research to save money."
+        ],
+        "correct": "Reliable safety evaluations and the prevention of hallucinations remain unsolved frontier challenges.",
+        "explanation": "The report emphasizes that while models are more capable, making them consistently safe and truthful remains a major focus of ongoing research.",
+        "topic": "Responsible AI"
+    }
+,
+    {
+        "question": "What does the term 'test-time compute' refer to in the context of recent AI models like OpenAI's o1?",
+        "options": [
+            "The amount of energy used to train the model.",
+            "A paradigm where models spend more time iteratively reasoning through an output at inference time.",
+            "The speed at which a model generates its first token.",
+            "A method for compressing a large model into a mobile-friendly version."
+        ],
+        "correct": "A paradigm where models spend more time iteratively reasoning through an output at inference time.",
+         "explanation": "Test-time compute allows models to 'think' longer before responding, significantly boosting scores on complex reasoning tasks[cite: 132, 133].",
+        "topic": "Advanced Model Paradigms"
+    },
+    {
+        "question": "By what factor did inference costs for a GPT-3.5-level system drop between late 2022 and late 2024?",
+        "options": [
+            "10-fold",
+            "50-fold",
+            "100-fold",
+            "Over 280-fold"
+        ],
+        "correct": "Over 280-fold",
+          "explanation": "Inference costs fell from $20.00 to just $0.07 per million tokens, a more than 280-fold reduction in 18 months[cite: 108].",
+        "topic": "The Inference Economy"
+    },
+    {
+        "question": "According to the report, how has the performance of AI 'agents' changed on the SWE-bench coding benchmark between 2023 and 2024?",
+        "options": [
+            "It decreased due to model hallucinations.",
+            "It increased by a staggering 67.3 percentage points.",
+            "It remained stagnant at roughly 4.4%.",
+            "It reached human parity at 97%."
+        ],
+        "correct": "It increased by a staggering 67.3 percentage points.",
+           "explanation": "AI performance on the software engineering benchmark SWE-bench jumped from 4.4% in 2023 to 71.7% in 2024[cite: 30, 123].",
+        "topic": "AI Agents and Software Engineering"
+    },
+    {
+        "question": "What is a primary characteristic of the 'frontier' of AI model performance in early 2025?",
+        "options": [
+            "A widening gap between the #1 and #10 ranked models.",
+            "Extreme performance convergence, with top models separated by as little as 0.7%.",
+            "A complete halt in performance gains on math benchmarks.",
+            "The total disappearance of closed-source models from leaderboards."
+        ],
+        "correct": "Extreme performance convergence, with top models separated by as little as 0.7%.",
+            "explanation": "The gap between the top two models on the Chatbot Arena Leaderboard shrank to just 0.7% in 2024[cite: 131].",
+        "topic": "Strategic Trends in Technical Performance"
+    },
+    {
+        "question": "Which hardware-related metric is improving at a rate of 40% annually?",
+        "options": [
+            "Chip production speed",
+            "Energy efficiency of machine learning hardware",
+            "The physical size of data centers",
+            "The cost of liquid cooling systems"
+        ],
+        "correct": "Energy efficiency of machine learning hardware",
+             "explanation": "While compute needs are rising, the energy efficiency of ML hardware has improved by 40% each year[cite: 116].",
+        "topic": "Hardware Mechanics"
+    },
+    {
+        "question": "What is the training compute 'doubling time' for notable AI models as of 2024?",
+        "options": [
+            "Every 5 months",
+            "Every 8 months",
+            "Every 12 months",
+            "Every 24 months"
+        ],
+        "correct": "Every 5 months",
+              "explanation": "Research indicates that training compute for notable models is doubling approximately every five months[cite: 106].",
+        "topic": "Infrastructure and Scaling"
+    },
+    {
+        "question": "In 2024, which country launched a $100 billion semiconductor and infrastructure initiative known as 'Project Transcendence'?",
+        "options": [
+            "China",
+            "The United States",
+            "Saudi Arabia",
+            "Germany"
+        ],
+        "correct": "Saudi Arabia",
+              "explanation": "Saudi Arabia's Project Transcendence represents a massive $100 billion national AI investment[cite: 55].",
+        "topic": "Sovereign Compute and Policy"
+    },
+    {
+        "question": "How did the carbon emissions of training Llama 3.1 405B compare to the earlier GPT-3 model?",
+        "options": [
+            "They were nearly identical.",
+            "Llama 3.1 405B emitted about 15 times more carbon.",
+            "GPT-3 emitted more carbon due to less efficient hardware.",
+            "Llama 3.1 405B emitted 100 times more carbon."
+        ],
+        "correct": "Llama 3.1 405B emitted about 15 times more carbon.",
+         "explanation": "Llama 3.1 405B emitted 8,930 tons of carbon compared to GPT-3’s 588 tons[cite: 118].",
+        "topic": "Environmental Impact"
+    },
+    {
+        "question": "What does the 'saturation' of benchmarks like MMLU signify for the AI research community?",
+        "options": [
+            "AI has achieved human-level intelligence across all domains.",
+            "Existing tests are too easy to differentiate the newest frontier models.",
+            "Researchers no longer care about evaluating model performance.",
+            "Benchmarks are being phased out in favor of user reviews."
+        ],
+        "correct": "Existing tests are too easy to differentiate the newest frontier models.",
+         "explanation": "Near-perfect scores on traditional tests have pushed researchers to propose harder benchmarks like 'Humanity’s Last Exam'[cite: 136, 137].",
+        "topic": "Technical Performance Metrics"
+    },
+    {
+        "question": "Which scientific achievement was specifically highlighted by a 2024 Nobel Prize for its use of deep learning?",
+        "options": [
+            "The discovery of gravitational waves",
+            "The application of AI to protein folding",
+            "The invention of the lithium-ion battery",
+            "The mapping of the human genome"
+        ],
+        "correct": "The application of AI to protein folding",
+         "explanation": "A 2024 Nobel Prize in Chemistry recognized the transformative role of AI in solving protein folding[cite: 66, 919].",
+        "topic": "AI in Science and Medicine"
+    },
+    {
+        "question": "How did the performance gap between top open-weight and closed-weight models change in early 2025?",
+        "options": [
+            "It widened from 1.7% to 8.0%.",
+            "It narrowed from 8.0% to just 1.7%.",
+            "It remained flat at 5.4%.",
+            "It disappeared entirely (0%)."
+        ],
+        "correct": "It narrowed from 8.0% to just 1.7%.",
+         "explanation": "Open-weight models closed the performance gap with proprietary models significantly over the last year[cite: 125, 126].",
+        "topic": "Strategic Trends in Research"
+    },
+    {
+        "question": "What percentage of 'notable' AI models were produced by the industry sector in 2024?",
+        "options": [
+            "40%",
+            "60%",
+            "78%",
+            "Nearly 90%"
+        ],
+        "correct": "Nearly 90%",
+         "explanation": "Industry's lead in model development grew from 60% in 2023 to nearly 90% in 2024[cite: 62, 95].",
+        "topic": "Industry vs. Academia"
+    },
+    {
+        "question": "According to the report, what is the 'success rate' of AI systems on the 'FrontierMath' benchmark?",
+        "options": [
+            "2%",
+            "8.8%",
+            "35.5%",
+            "74.4%"
+        ],
+        "correct": "2%",
+         "explanation": "FrontierMath is so complex that current AI systems can only solve 2% of its problems[cite: 138].",
+        "topic": "Advanced Benchmarking"
+    },
+    {
+        "question": "What trend is observed in the dataset sizes used for training Large Language Models (LLMs)?",
+        "options": [
+            "They are shrinking as models get more efficient.",
+            "They are doubling every eight months.",
+            "They have stabilized and are no longer growing.",
+            "They are doubling every five months."
+        ],
+        "correct": "They are doubling every eight months.",
+         "explanation": "While compute doubles every 5 months, training dataset sizes are doubling every eight months[cite: 106].",
+        "topic": "Infrastructure and Scaling"
+    },
+    {
+        "question": "Which country leads in total AI patents, accounting for nearly 70% of all grants globally as of 2023?",
+        "options": [
+            "The United States",
+            "South Korea",
+            "China",
+            "Japan"
+        ],
+        "correct": "China",
+         "explanation": "China leads the world in AI patenting, accounting for 69.7% of all grants in 2023[cite: 113].",
+        "topic": "Global Competitive Landscape"
+    },
+    {
+        "question": "What is a major limitation of current AI models in 'high-stakes' settings as noted in the report?",
+        "options": [
+            "They are too slow for real-time use.",
+            "They often fail to reliably solve logic tasks even with provably correct solutions.",
+            "They cannot generate code in common languages like Python.",
+            "They require too much manual data entry."
+        ],
+        "correct": "They often fail to reliably solve logic tasks even with provably correct solutions.",
+         "explanation": "AI models still struggle with precision in reasoning, which limits their effectiveness in settings where errors are critical[cite: 68, 921].",
+        "topic": "Technical Challenges"
+    },
+    {
+        "question": "How did the gap between Chinese and U.S. model performance on the HumanEval benchmark change in 2024?",
+        "options": [
+            "It widened from 3.7 to 31.6 points.",
+            "It stayed at 17.5 points.",
+            "It narrowed from 31.6 points to near parity at 3.7 points.",
+            "Chinese models surpassed U.S. models by 10 points."
+        ],
+        "correct": "It narrowed from 31.6 points to near parity at 3.7 points.",
+         "explanation": "Chinese models have rapidly closed the quality gap with U.S. models across major benchmarks[cite: 40, 129].",
+        "topic": "Geopolitical Trends in AI"
+    },
+    {
+        "question": "The FDA approved how many AI-enabled medical devices in 2023?",
+        "options": [
+            "6",
+            "59",
+            "122",
+            "223"
+        ],
+        "correct": "223",
+         "explanation": "The number of AI-enabled medical devices approved by the FDA reached 223 in 2023, up from just six in 2015[cite: 33, 879].",
+        "topic": "AI in Science and Medicine"
+    },
+    {
+        "question": "What trend is emerging in U.S. federal AI regulation?",
+        "options": [
+            "Agencies are removing regulations to promote growth.",
+            "The number of AI-related regulations more than doubled in 2024.",
+            "Regulation is now handled by a single 'AI Agency'.",
+            "Federal agencies have been banned from using AI."
+        ],
+        "correct": "The number of AI-related regulations more than doubled in 2024.",
+         "explanation": "U.S. federal agencies introduced 59 AI-related regulations in 2024, more than twice the number from 2023[cite: 54, 903].",
+        "topic": "Policy and Governance"
+    },
+    {
+        "question": "According to the report summary, which region reports the highest level of public AI optimism (83%)?",
+        "options": [
+            "The United States",
+            "The European Union",
+            "China",
+            "Canada"
+        ],
+        "correct": "China",
+         "explanation": "A strong majority of the public in China (83%) sees AI as more beneficial than harmful[cite: 47, 896].",
+        "topic": "Public Opinion"
+    }
+,
+    {
+        "question": "What is the primary objective of the 'test-time compute' reasoning paradigm introduced in 2024?",
+        "options": [
+            "To reduce the power consumption of models during training.",
+            "To allow models to iteratively reason through their outputs during inference.",
+            "To automate the creation of synthetic training data.",
+            "To encrypt model weights for secure local deployment."
+        ],
+        "correct": "Option 2",
+         "explanation": "Test-time compute, used in models like OpenAI's o1, allows systems to 'think' longer during the response phase to improve reasoning accuracy[cite: 132, 133].",
+        "topic": "Machine Learning Techniques"
+    },
+    {
+        "question": "Which benchmark was specifically designed to test the limits of AI in software engineering by requiring models to solve real-world GitHub issues?",
+        "options": [
+            "GPQA",
+            "MMLU",
+            "SWE-bench",
+            "HumanEval"
+        ],
+        "correct": "Option 3",
+         "explanation": "SWE-bench tests advanced systems on their ability to resolve actual software engineering problems[cite: 875, 121].",
+        "topic": "Testing and Evaluation"
+    },
+    {
+        "question": "What significant trend was observed regarding 'open-weight' models in 2024?",
+        "options": [
+            "They fell significantly further behind closed-weight models.",
+            "They nearly disappeared from the market due to training costs.",
+            "The performance gap between top open-weight and closed-weight models narrowed to just 1.7%.",
+            "They became the only models capable of passing the Turing Test."
+        ],
+        "correct": "Option 3",
+         "explanation": "Open-weight models rapidly closed the performance gap with proprietary closed models, dropping from an 8.0% difference to 1.7%[cite: 125, 126].",
+        "topic": "Technical Performance Trends"
+    },
+    {
+        "question": "In the context of the 2025 report, what does 'benchmark saturation' refer to?",
+        "options": [
+            "The excessive number of different benchmarks available.",
+            "The point where models achieve near-perfect scores, making the tests ineffective for differentiation.",
+            "The high cost of running a model against a specific test suite.",
+            "The bias found within the questions of traditional evaluation sets."
+        ],
+        "correct": "Option 2",
+         "explanation": "Saturation occurs when traditional benchmarks like MMLU become too easy for frontier models, necessitating harder tests[cite: 136].",
+        "topic": "Testing and Evaluation"
+    },
+    {
+        "question": "Which new benchmark requires AI to solve complex, PhD-level science questions that often stump non-expert humans?",
+        "options": [
+            "GPQA",
+            "GSM8K",
+            "PlanBench",
+            "MMMU"
+        ],
+        "correct": "Option 1",
+         "explanation": "GPQA is a challenging benchmark featuring experts-written science questions that are very difficult for non-experts[cite: 875, 121].",
+        "topic": "Testing and Evaluation"
+    },
+    {
+        "question": "What trade-off is associated with the enhanced reasoning of the o1 model compared to GPT-4o?",
+        "options": [
+            "It is 30 times faster but less accurate.",
+            "It is six times cheaper but uses more data.",
+            "It is six times more expensive and 30 times slower.",
+            "It requires significantly less energy despite being slower."
+        ],
+        "correct": "Option 3",
+         "explanation": "While more capable at reasoning, the o1 model is significantly slower and more costly than GPT-4o[cite: 135].",
+        "topic": "Technical Performance Trends"
+    },
+    {
+        "question": "What is the current success rate for AI systems on the 'BigCodeBench' coding benchmark?",
+        "options": [
+            "97%",
+            "71.7%",
+            "35.5%",
+            "8.8%"
+        ],
+        "correct": "Option 3",
+         "explanation": "On BigCodeBench, AI systems currently achieve a 35.5% success rate, far below the 97% human standard[cite: 139].",
+        "topic": "Testing and Evaluation"
+    },
+    {
+        "question": "Which metric is doubling every five months for notable AI models, according to recent research?",
+        "options": [
+            "Training compute",
+            "Inference speed",
+            "Dataset size",
+            "Energy efficiency"
+        ],
+        "correct": "Option 1",
+         "explanation": "Training compute requirements for notable models are doubling approximately every five months[cite: 106].",
+        "topic": "Machine Learning Techniques"
+    },
+    {
+        "question": "Which benchmark tests the ability of AI models to perform complex planning and reasoning in high-stakes settings?",
+        "options": [
+            "SORA",
+            "PlanBench",
+            "HumanEval",
+            "HELM Safety"
+        ],
+        "correct": "Option 2",
+         "explanation": "PlanBench is a benchmark used to test complex reasoning and planning capabilities[cite: 920].",
+        "topic": "Testing and Evaluation"
+    },
+    {
+        "question": "What performance gain was recorded on the SWE-bench for AI systems between 2023 and 2024?",
+        "options": [
+            "18.8 percentage points",
+            "48.9 percentage points",
+            "67.3 percentage points",
+            "9.3 percentage points"
+        ],
+        "correct": "Option 3",
+         "explanation": "AI performance on SWE-bench saw a massive leap of 67.3 percentage points in a single year[cite: 876, 123].",
+        "topic": "Technical Performance Trends"
+    },
+    {
+        "question": "Which evaluation tool focuses specifically on assessing the factuality and safety of Large Language Models?",
+        "options": [
+            "BigCodeBench",
+            "FACTS",
+            "Humanity's Last Exam",
+            "FrontierMath"
+        ],
+        "correct": "Option 2",
+         "explanation": "FACTS is one of the newer benchmarks designed to evaluate model factuality and safety[cite: 889].",
+        "topic": "Testing and Evaluation"
+    },
+    {
+        "question": "As of early 2025, what is the 'convergence' status of model performance at the frontier?",
+        "options": [
+            "The top two models are separated by a 12% skill gap.",
+            "Performance gaps are widening as one company dominates.",
+            "The top two models are separated by just 0.7% on leaderboards.",
+            "Most models are now failing traditional tests."
+        ],
+        "correct": "Option 3",
+         "explanation": "The AI landscape is increasingly competitive, with the top two models now separated by only 0.7%[cite: 131].",
+        "topic": "Technical Performance Trends"
+    },
+    {
+        "question": "Which machine learning training resource is doubling every eight months?",
+        "options": [
+            "Model parameters",
+            "Training datasets",
+            "GPU clock speeds",
+            "Carbon offset credits"
+        ],
+        "correct": "Option 2",
+         "explanation": "Dataset sizes for training Large Language Models are doubling every eight months[cite: 106].",
+        "topic": "Machine Learning Techniques"
+    },
+    {
+        "question": "What is 'Humanity's Last Exam' designed to measure?",
+        "options": [
+            "The ability of AI to generate high-quality video.",
+            "A model's capacity to solve basic arithmetic.",
+            "Rigorous academic knowledge where even top systems currently struggle.",
+            "The level of public optimism regarding AI's benefits."
+        ],
+        "correct": "Option 3",
+         "explanation": "Humanity's Last Exam is a rigorous academic test where the top system scores just 8.80%[cite: 137].",
+        "topic": "Testing and Evaluation"
+    },
+    {
+        "question": "How has the 'Turing Test' been redefined in the 2025 report?",
+        "options": [
+            "It is now the primary legal standard for defining AI.",
+            "It is no longer an ambitious goal, as it has been surpassed by sophisticated systems.",
+            "It has been made harder by adding a physical robotics component.",
+            "It is the only test China uses to evaluate its models."
+        ],
+        "correct": "Option 2",
+         "explanation": "The Turing Test is no longer considered an ambitious goal for today's sophisticated AI systems[cite: 858].",
+        "topic": "Technical Performance Trends"
+    },
+    {
+        "question": "What is the primary function of the 'FrontierMath' benchmark?",
+        "options": [
+            "To test simple algebra and calculus.",
+            "To evaluate AI on extremely complex mathematics problems.",
+            "To measure the speed of mathematical computations.",
+            "To test AI's ability to explain math to K-12 students."
+        ],
+        "correct": "Option 2",
+         "explanation": "FrontierMath is a complex benchmark where AI systems solve only 2% of the problems[cite: 138].",
+        "topic": "Testing and Evaluation"
+    },
+    {
+        "question": "Which country leads in the total volume of AI research publications and citations as of 2023?",
+        "options": [
+            "United States",
+            "United Kingdom",
+            "China",
+            "South Korea"
+        ],
+        "correct": "Option 3",
+         "explanation": "China produced 23.2% of AI publications and 22.6% of citations in 2023[cite: 98].",
+        "topic": "Machine Learning Techniques"
+    },
+    {
+        "question": "What trend is reported for machine learning hardware energy efficiency?",
+        "options": [
+            "Efficiency is decreasing as models get larger.",
+            "Efficiency has stayed flat for a decade.",
+            "Energy efficiency is increasing by 40% annually.",
+            "Efficiency only improves when models are smaller."
+        ],
+        "correct": "Option 3",
+         "explanation": "Hardware energy efficiency has been improving at a rate of 40% each year[cite: 899, 116].",
+        "topic": "Technical Performance Trends"
+    },
+    {
+        "question": "Which specific 2024 model release demonstrated a 142-fold reduction in size while maintaining performance on the MMLU benchmark?",
+        "options": [
+            "GPT-4o mini",
+            "Llama 3.1 8B",
+            "Phi-3 Mini",
+            "Gemini 1.5 Flash"
+        ],
+        "correct": "Option 3",
+        "explanation": "Phi-3 Mini achieved the same 60% MMLU threshold as much larger models, marking a 142-fold size reduction.",
+        "topic": "Machine Learning Techniques"
+    },
+    {
+        "question": "What is a major limitation of current AI systems when solving PlanBench tasks?",
+        "options": [
+            "They take too long to generate text.",
+            "They fail to reliably solve logic tasks even with provably correct solutions.",
+            "They cannot handle multi-modal inputs like images.",
+            "They require constant internet connection to reason."
+        ],
+        "correct": "Option 2",
+         "explanation": "AI models still struggle with logic and reasoning tasks in benchmarks like PlanBench, which limits their use where precision is critical[cite: 68, 921].",
+        "topic": "Technical Performance Trends"
+    }
 ]
