@@ -228,17 +228,28 @@ body {
 }
 
 #quiz-setup input {
+    text-align: right;
+    margin-bottom: 20px;
     font-size: 18px;
-    padding: 5px;
-    margin: 10px;
+    color: #5d4037;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffecb3;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     width: 100px;
 }
 
 #quiz-setup button {
     font-size: 16px;
-    padding: 10px 20px;
-    margin-top: 10px;
     cursor: pointer;
+    font-family: Arial, sans-serif;
+    color: #5d4037;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffe0b2;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .review-option {
