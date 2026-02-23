@@ -2650,4 +2650,833 @@
          "explanation": "AI models still struggle with logic and reasoning tasks in benchmarks like PlanBench, which limits their use where precision is critical[cite: 68, 921].",
         "topic": "Technical Performance Trends"
     }
+    ,
+     {
+        "question": "By what percentage did the performance of AI systems on the GPQA benchmark (PhD-level questions) improve in 2024?",
+        "options": [
+            "18.8 percentage points",
+            "28.4 percentage points",
+            "48.9 percentage points",
+            "64.4 percentage points"
+        ],
+        "correct": "48.9 percentage points",
+        "explanation": "AI performance on the GPQA benchmark saw a remarkable improvement of 48.9 percentage points in 2024 [1].",
+        "topic": "Technical Benchmarks"
+    },
+    {
+        "question": "What was the success rate for AI models on the SWE-bench coding benchmark in 2023 compared to the top performance in late 2024?",
+        "options": [
+            "4.4% in 2023 to 71.7% in 2024",
+            "10.2% in 2023 to 35.5% in 2024",
+            "15% in 2023 to 92% in 2024",
+            "0.3% in 2023 to 7.9% in 2024"
+        ],
+        "correct": "4.4% in 2023 to 71.7% in 2024",
+        "explanation": "AI systems could solve just 4.4% of coding problems on SWE-bench in 2023, a figure that jumped to 71.7% in 2024 with the o3 model [1, 2].",
+        "topic": "Technical Benchmarks"
+    },
+    {
+        "question": "Which new benchmark released in 2024 is designed to test advanced mathematics like number theory and category theory where top models still struggle?",
+        "options": [
+            "GSM8K",
+            "FrontierMath",
+            "MATH",
+            "AIME 2024"
+        ],
+        "correct": "FrontierMath",
+        "explanation": "FrontierMath is a complex mathematics benchmark where AI systems solve only 2% to 25.2% of problems [3, 4].",
+        "topic": "Technical Benchmarks"
+    },
+    {
+        "question": "What trend was observed regarding the performance gap between open-weight and closed-weight models on the Chatbot Arena Leaderboard by early 2025?",
+        "options": [
+            "The gap widened to 15%",
+            "The gap nearly disappeared, narrowing to 1.7%",
+            "Open-weight models now outperform closed models by 8%",
+            "There is no measurable difference between the two types"
+        ],
+        "correct": "The gap nearly disappeared, narrowing to 1.7%",
+        "explanation": "The performance gap on the Chatbot Arena narrowed from 8.0% in early 2024 to just 1.7% by February 2025 [5].",
+        "topic": "Technical Benchmarks"
+    },
+    {
+        "question": "On the MMLU benchmark, what was the state-of-the-art score achieved by OpenAI's o1-preview in September 2024?",
+        "options": [
+            "86.4%",
+            "89.8%",
+            "92.3%",
+            "100%"
+        ],
+        "correct": "92.3%",
+        "explanation": "The highest recorded score on MMLU, 92.3%, was achieved by the o1-preview model in late 2024 [6].",
+        "topic": "Technical Benchmarks"
+    },
+    {
+        "question": "In the RE-Bench evaluation of AI agents, at what time budget does human expert performance begin to surpass AI performance?",
+        "options": [
+            "2 hours",
+            "8 hours",
+            "16 hours",
+            "32 hours"
+        ],
+        "correct": "32 hours",
+        "explanation": "As the time budget increases to 32 hours, human experts outscore AI agents by a factor of two to one [7, 8].",
+        "topic": "Technical Benchmarks"
+    },
+    {
+        "question": "What is 'Humanity's Last Exam' (HLE) intended to address in the AI evaluation landscape?",
+        "options": [
+            "Basic literacy for AI agents",
+            "Saturation of traditional benchmarks like MMLU and GSM8K",
+            "The Turing test for consciousness",
+            "Primary school level common sense"
+        ],
+        "correct": "Saturation of traditional benchmarks like MMLU and GSM8K",
+        "explanation": "HLE was developed as a more rigorous test because traditional benchmarks have reached saturation [3, 9].",
+        "topic": "Technical Benchmarks"
+    },
+    {
+        "question": "Which model achieved a perfect 100% score on the HumanEval coding benchmark in 2024?",
+        "options": [
+            "GPT-4o",
+            "DeepSeek-V3",
+            "Claude 3.5 Sonnet (HPT)",
+            "Llama 3.1 405B"
+        ],
+        "correct": "Claude 3.5 Sonnet (HPT)",
+        "explanation": "Claude 3.5 Sonnet (HPT) is the current leader on HumanEval with a score of 100% [10].",
+        "topic": "Technical Benchmarks"
+    },
+    {
+        "question": "How did the performance gap between Chinese and U.S. models on the HumanEval benchmark change between 2023 and 2024?",
+        "options": [
+            "It widened from 10 to 40 percentage points",
+            "It remained stable at 17.5 percentage points",
+            "It narrowed from 31.6 to 3.7 percentage points",
+            "Chinese models now lead by 15 percentage points"
+        ],
+        "correct": "It narrowed from 31.6 to 3.7 percentage points",
+        "explanation": "The performance gap between leading U.S. and Chinese models on HumanEval narrowed from 31.6 to 3.7 percentage points in one year [5].",
+        "topic": "Technical Benchmarks"
+    },
+    {
+        "question": "What score did the top AI system achieve on 'Humanity's Last Exam' as of the 2025 report?",
+        "options": [
+            "8.80%",
+            "35.50%",
+            "71.70%",
+            "92.30%"
+        ],
+        "correct": "8.80%",
+        "explanation": "On the rigorous Humanity's Last Exam, the top AI system currently scores only 8.80% [3, 11].",
+        "topic": "Technical Benchmarks"
+    },
+    {
+        "question": "What percentage of notable AI models in 2024 originated from the industry sector?",
+        "options": [
+            "40%",
+            "60%",
+            "75%",
+            "90%"
+        ],
+        "correct": "90%",
+        "explanation": "Nearly 90% of notable AI models in 2024 came from industry, a significant increase from 60% in 2023 [12, 13].",
+        "topic": "R&D Trends"
+    },
+    {
+        "question": "According to the Epoch AI database, how many notable AI models originated from academia in 2024?",
+        "options": [
+            "0",
+            "12",
+            "25",
+            "55"
+        ],
+        "correct": "0",
+        "explanation": "In 2024, Epoch AI identified no notable AI models originating solely from academia [13, 14].",
+        "topic": "R&D Trends"
+    },
+    {
+        "question": "Which organization has produced the highest cumulative number of notable AI models since 2014?",
+        "options": [
+            "OpenAI",
+            "Meta",
+            "Microsoft",
+            "Google"
+        ],
+        "correct": "Google",
+        "explanation": "Since 2014, Google has led the industry with 187 notable AI models [15].",
+        "topic": "R&D Trends"
+    },
+    {
+        "question": "What was the year-over-year increase in the number of AI-related GitHub projects in 2024?",
+        "options": [
+            "10.5%",
+            "21.3%",
+            "40.3%",
+            "100%"
+        ],
+        "correct": "40.3%",
+        "explanation": "There was a sharp 40.3% rise in the total number of AI-related GitHub projects in the last year [16].",
+        "topic": "R&D Trends"
+    },
+    {
+        "question": "By how much did the cost of querying an AI model equivalent to GPT-3.5 on the MMLU benchmark drop between 2022 and 2024?",
+        "options": [
+            "2 times",
+            "10 times",
+            "100 times",
+            "Over 280 times"
+        ],
+        "correct": "Over 280 times",
+        "explanation": "The cost dropped from $20.00 to $0.07 per million tokens, a more than 280-fold reduction in 18 months [17, 18].",
+        "topic": "R&D Trends"
+    },
+    {
+        "question": "What is the primary concern regarding training on synthetic data as highlighted in the R&D chapter?",
+        "options": [
+            "It is too expensive to generate",
+            "It causes models to hallucinate more",
+            "Compounded degradation in output quality from hallucinated content",
+            "Lack of variety in the data"
+        ],
+        "correct": "Compounded degradation in output quality from hallucinated content",
+        "explanation": "Models can experience compounded degradation in output quality when training on hallucinated content in datasets [19].",
+        "topic": "R&D Trends"
+    },
+    {
+        "question": "Which country accounted for the second-largest share of AI project contributions on GitHub in 2024?",
+        "options": [
+            "China",
+            "India",
+            "Germany",
+            "United Kingdom"
+        ],
+        "correct": "India",
+        "explanation": "India was the second-largest contributor to GitHub AI projects with 19.9% of the share [20].",
+        "topic": "R&D Trends"
+    },
+    {
+        "question": "In 2024, what percentage of notable AI models were launched without their corresponding training code?",
+        "options": [
+            "16.4%",
+            "32.8%",
+            "60.7%",
+            "90.2%"
+        ],
+        "correct": "60.7%",
+        "explanation": "In 2024, the majority of notable models (60.7%) were launched without corresponding training code [21].",
+        "topic": "R&D Trends"
+    },
+    {
+        "question": "What hardware component was most commonly reported for training notable machine learning models as of 2024?",
+        "options": [
+            "Nvidia V100",
+            "Nvidia A100",
+            "Nvidia H100",
+            "Google TPU v4"
+        ],
+        "correct": "Nvidia A100",
+        "explanation": "As of 2024, the A100 was the most commonly reported hardware, used by 64 models [22].",
+        "topic": "R&D Trends"
+    },
+    {
+        "question": "According to the Foundation Model Transparency Index, what was the average transparency score among major developers in May 2024?",
+        "options": [
+            "37 out of 100",
+            "58 out of 100",
+            "75 out of 100",
+            "89 out of 100"
+        ],
+        "correct": "58 out of 100",
+        "explanation": "The average transparency score increased from 37% in October 2023 to 58% in May 2024 [23-25].",
+        "topic": "Responsible AI"
+    },
+    {
+        "question": "The number of reported AI-related incidents tracked by the AI Incident Database reached what total in 2024?",
+        "options": [
+            "105",
+            "131",
+            "233",
+            "1,278"
+        ],
+        "correct": "233",
+        "explanation": "The AI Incident Database (AIID) tracked 233 reported incidents in 2024 [26].",
+        "topic": "Responsible AI"
+    },
+    {
+        "question": "What is a key finding regarding implicit bias in advanced LLMs like GPT-4 and Claude 3 Sonnet?",
+        "options": [
+            "They are completely free of racial and gender bias",
+            "They only show bias when prompted with negative terms",
+            "They continue to demonstrate implicit biases despite measures to curb explicit bias",
+            "Bias has been eliminated in 2024 models"
+        ],
+        "correct": "They continue to demonstrate implicit biases despite measures to curb explicit bias",
+        "explanation": "Advanced LLMs continue to exhibit implicit biases, such as associating negative terms with Black individuals and favoring men for leadership roles [27, 28].",
+        "topic": "Responsible AI"
+    },
+    {
+        "question": "Which new benchmark suite was introduced by Stanford's CRFM to evaluate AI models against standardized safety metrics?",
+        "options": [
+            "TruthfulQA",
+            "HELM Safety",
+            "AIR-Bench",
+            "HHEM Leaderboard"
+        ],
+        "correct": "HELM Safety",
+        "explanation": "HELM Safety is a benchmarking suite designed to evaluate AI models against responsibility and safety metrics [29].",
+        "topic": "Responsible AI"
+    },
+    {
+        "question": "What is the 'infectious jailbreak' phenomenon described in 2024 research?",
+        "options": [
+            "A virus that infects AI hardware",
+            "Compromising a single agent triggers a system-wide failure across a network of agents",
+            "A way to steal training data via social engineering",
+            "An AI agent that spreads misinformation intentionally"
+        ],
+        "correct": "Compromising a single agent triggers a system-wide failure across a network of agents",
+        "explanation": "Infectious jailbreaks occur when compromising a single agent causes harmful behavior to spread exponentially across others [30].",
+        "topic": "Responsible AI"
+    },
+    {
+        "question": "What percentage of surveyed organizations reported experiencing AI-related incidents in 2024?",
+        "options": [
+            "8%",
+            "25%",
+            "42%",
+            "66%"
+        ],
+        "correct": "8%",
+        "explanation": "A survey of business leaders found that only 8% of organizations reported experiencing AI-related incidents [31].",
+        "topic": "Responsible AI"
+    },
+    {
+        "question": "Which category of risk is most commonly mitigated by organizations using AI, according to the McKinsey survey?",
+        "options": [
+            "Personal/individual privacy",
+            "Cybersecurity",
+            "Regulatory compliance",
+            "Intellectual property infringement"
+        ],
+        "correct": "Cybersecurity",
+        "explanation": "Cybersecurity was selected by 55% of respondents as a mitigated risk, the highest in the survey [32].",
+        "topic": "Responsible AI"
+    },
+    {
+        "question": "What trend was noted regarding data consent protocols for AI training between 2023 and 2024?",
+        "options": [
+            "Websites became more open to data scraping",
+            "There was no change in robots.txt usage",
+            "Significant increase in data use restrictions via robots.txt and terms of service",
+            "Legal cases led to the elimination of all data scraping restrictions"
+        ],
+        "correct": "Significant increase in data use restrictions via robots.txt and terms of service",
+        "explanation": "Researchers observed a significant increase in data use restrictions as websites implemented new protocols to limit AI data scraping [33].",
+        "topic": "Responsible AI"
+    },
+    {
+        "question": "How did the number of Responsible AI (RAI) papers at leading academic conferences change in 2024?",
+        "options": [
+            "Decreased by 10%",
+            "Stayed flat",
+            "Increased by 28.8%",
+            "Quadrupled"
+        ],
+        "correct": "Increased by 28.8%",
+        "explanation": "The number of RAI papers accepted at leading conferences rose by 28.8% in 2024 [28, 34].",
+        "topic": "Responsible AI"
+    },
+    {
+        "question": "Which AI skill cluster saw the largest increase in U.S. labor market share in 2024?",
+        "options": [
+            "Machine Learning",
+            "Natural Language Processing",
+            "Generative AI",
+            "Robotics"
+        ],
+        "correct": "Generative AI",
+        "explanation": "Generative AI saw the largest increase in market share among AI skill clusters, growing by nearly a factor of four [35].",
+        "topic": "AI Economy"
+    },
+    {
+        "question": "What is the 'equalizing effect' of AI on workplace performance identified in several 2024 studies?",
+        "options": [
+            "AI makes all employees earn the same salary",
+            "Low-skill workers see higher productivity gains than high-skill workers",
+            "AI replaces humans at equal rates across all industries",
+            "AI tools work equally well on all hardware"
+        ],
+        "correct": "Low-skill workers see higher productivity gains than high-skill workers",
+        "explanation": "A consistent pattern is that AI tools boost the productivity of low-skill or junior workers more significantly than high-skill workers [36, 37].",
+        "topic": "AI Economy"
+    },
+    {
+        "question": "Which country had the greatest relative AI hiring rate vibrancy in 2024?",
+        "options": [
+            "United States",
+            "Brazil",
+            "Saudi Arabia",
+            "India"
+        ],
+        "correct": "India",
+        "explanation": "In 2024, India experienced the most significant rise in AI talent recruitment vibrancy at 33.4% [38, 39].",
+        "topic": "AI Economy"
+    },
+    {
+        "question": "According to the Anthropic study, which occupation group accounts for the highest percentage of Claude AI conversations (37.2%)?",
+        "options": [
+            "Office and administrative support",
+            "Legal",
+            "Computer and mathematical",
+            "Arts, design, and media"
+        ],
+        "correct": "Computer and mathematical",
+        "explanation": "Computer and mathematical occupations dominate Claude usage, accounting for 37.2% of all AI interactions [40].",
+        "topic": "AI Economy"
+    },
+    {
+        "question": "What percentage of business leaders reported that their organizations' generative AI rollouts were 'mature'?",
+        "options": [
+            "1%",
+            "15%",
+            "33%",
+            "72%"
+        ],
+        "correct": "1%",
+        "explanation": "A survey of C-suite executives found that only 1% described their generative AI rollouts as 'mature' [41].",
+        "topic": "AI Economy"
+    },
+    {
+        "question": "In terms of cost savings from generative AI, which business function reported the highest percentage of savings (61%)?",
+        "options": [
+            "Human Resources",
+            "Marketing and Sales",
+            "Supply chain and inventory management",
+            "IT"
+        ],
+        "correct": "Supply chain and inventory management",
+        "explanation": "The area where respondents most frequently reported cost savings from generative AI was supply chain and inventory management at 61% [42, 43].",
+        "topic": "AI Economy"
+    },
+    {
+        "question": "What was the state-of-the-art score set by o1 on the MedQA benchmark for clinical knowledge in late 2024?",
+        "options": [
+            "78.2%",
+            "81.3%",
+            "92.3%",
+            "96.0%"
+        ],
+        "correct": "96.0%",
+        "explanation": "OpenAI's o1 set a new state-of-the-art score of 96.0% on the MedQA benchmark [44-46].",
+        "topic": "Science & Medicine"
+    },
+    {
+        "question": "The number of publications on ethics in medical AI saw what change between 2020 and 2024?",
+        "options": [
+            "Decreased due to regulation",
+            "Doubled",
+            "Quadrupled",
+            "Remained unchanged"
+        ],
+        "correct": "Quadrupled",
+        "explanation": "The number of publications on ethics in medical AI quadrupled, rising from 288 in 2020 to 1,031 in 2024 [47-49].",
+        "topic": "Science & Medicine"
+    },
+    {
+        "question": "What is the primary function of Google's FireSat AI system released in 2024?",
+        "options": [
+            "Predicting sunspots",
+            "Detecting wildfires as small as 5x5 meters within 20 minutes",
+            "Simulating protein stability",
+            "Analyzing clinical risk in hospitals"
+        ],
+        "correct": "Detecting wildfires as small as 5x5 meters within 20 minutes",
+        "explanation": "FireSat is a satellite-based wildfire detection system that identifies fires as small as 5x5 meters very quickly [44, 50].",
+        "topic": "Science & Medicine"
+    },
+    {
+        "question": "Which medical imaging domain had the highest concentration of newly launched foundation models in 2024?",
+        "options": [
+            "Ophthalmology",
+            "Radiology",
+            "Pathology",
+            "Echocardiology"
+        ],
+        "correct": "Pathology",
+        "explanation": "In 2024, there was a particularly high concentration of newly launched pathology models, such as CHIEF and Virchow [51].",
+        "topic": "Science & Medicine"
+    },
+    {
+        "question": "What milestone did the ESM3 model achieve regarding protein engineering in 2024?",
+        "options": [
+            "Predicting every human protein structure",
+            "Designing a new artificial green fluorescent protein (esmGFP)",
+            "Curing a specific rare disease in simulation",
+            "Creating the first digital twin of a human brain"
+        ],
+        "correct": "Designing a new artificial green fluorescent protein (esmGFP)",
+        "explanation": "ESM3's most notable achievement was designing esmGFP, a fluorescent protein estimated to take nature 500 million years to develop [52].",
+        "topic": "Science & Medicine"
+    },
+    {
+        "question": "How much more training data (tokens) did the general-purpose Llama 3 model use compared to the GatorTron medical model?",
+        "options": [
+            "They used the same amount",
+            "Llama 3 used twice as much",
+            "Llama 3 used nearly 182 times more tokens",
+            "GatorTron used more data to ensure precision"
+        ],
+        "correct": "Llama 3 used nearly 182 times more tokens",
+        "explanation": "Llama 3 was trained on 15 trillion tokens, nearly 182 times more than GatorTron's 82 billion tokens [53, 54].",
+        "topic": "Science & Medicine"
+    },
+    {
+        "question": "The number of AI-related regulations in U.S. federal agencies saw what growth in 2024?",
+        "options": [
+            "Decreased by 50%",
+            "Stayed at 25 regulations",
+            "More than doubled from 25 to 59",
+            "Rose to over 500 regulations"
+        ],
+        "correct": "More than doubled from 25 to 59",
+        "explanation": "The number of AI-related regulations in U.S. federal agencies more than doubled, increasing from 25 to 59 in 2024 [55].",
+        "topic": "Policy & Governance"
+    },
+    {
+        "question": "What major AI legislation was passed by the European Parliament in June 2024?",
+        "options": [
+            "The Brussels AI Directive",
+            "The EU AI Act",
+            "The GDPR-AI Amendment",
+            "The European Machine Learning Law"
+        ],
+        "correct": "The EU AI Act",
+        "explanation": "The EU AI Act, a milestone in global legislation, was passed by the European Parliament in June 2024 [55].",
+        "topic": "Policy & Governance"
+    },
+    {
+        "question": "In the United States, how many states had passed regulations targeting deepfakes by late 2024?",
+        "options": [
+            "5",
+            "15",
+            "24",
+            "50"
+        ],
+        "correct": "24",
+        "explanation": "By 2024, 24 states in the U.S. had passed regulations specifically targeting deepfakes [55, 56].",
+        "topic": "Policy & Governance"
+    },
+    {
+        "question": "What is the 'Project Transcendence' investment figure announced by Saudi Arabia in 2024?",
+        "options": [
+            "2.4 billion dollars",
+            "10 billion dollars",
+            "47.5 billion dollars",
+            "100 billion dollars"
+        ],
+        "correct": "100 billion dollars",
+        "explanation": "Saudi Arabia announced a 100 billion dollar project named 'Project Transcendence' for AI infrastructure [55].",
+        "topic": "Policy & Governance"
+    },
+    {
+        "question": "Which U.S. government agency received the largest share of public AI grant funding between 2013 and 2023?",
+        "options": [
+            "Department of Defense",
+            "National Science Foundation",
+            "Department of Health and Human Services",
+            "Department of Energy"
+        ],
+        "correct": "Department of Health and Human Services",
+        "explanation": "The Department of Health and Human Services allocated the greatest share of U.S. AI-related grants at 43.6% [57].",
+        "topic": "Policy & Governance"
+    },
+    {
+        "question": "What fraction of countries worldwide now offer or plan to offer K-12 Computer Science (CS) education?",
+        "options": [
+            "One-quarter",
+            "One-third",
+            "One-half",
+            "Two-thirds"
+        ],
+        "correct": "Two-thirds",
+        "explanation": "Two-thirds of countries now offer or plan to offer K-12 Computer Science education, a fraction that has doubled since 2019 [58-60].",
+        "topic": "AI Education"
+    },
+    {
+        "question": "What is a primary barrier to K-12 Computer Science education in many African countries, as noted in the report?",
+        "options": [
+            "Lack of teachers",
+            "Lack of student interest",
+            "Infrastructure gaps like lack of electricity",
+            "Religious opposition"
+        ],
+        "correct": "Infrastructure gaps like lack of electricity",
+        "explanation": "Students in African countries often lack access to CS education due to school-level infrastructure gaps like electricity [58-60].",
+        "topic": "AI Education"
+    },
+    {
+        "question": "What trend was observed regarding AI-specific master's degree graduates in the U.S. between 2022 and 2023?",
+        "options": [
+            "The number decreased by half",
+            "The number nearly doubled",
+            "The number stayed the same",
+            "AI master's degrees were eliminated in favor of PhDs"
+        ],
+        "correct": "The number nearly doubled",
+        "explanation": "Graduates who earned their master's degree in AI in the U.S. nearly doubled between 2022 and 2023 [61, 62].",
+        "topic": "AI Education"
+    },
+    {
+        "question": "Despite 81% of U.S. teachers wanting AI in foundational CS education, how many feel equipped to teach it?",
+        "options": [
+            "Less than 10%",
+            "About 25%",
+            "Less than half",
+            "Nearly all"
+        ],
+        "correct": "Less than half",
+        "explanation": "While 81% of teachers agree AI should be taught, less than half feel equipped to teach AI [58-60, 63].",
+        "topic": "AI Education"
+    },
+    {
+        "question": "Which country produces the most ICT graduates globally across the associate, bachelor's, master's, and PhD levels?",
+        "options": [
+            "China",
+            "India",
+            "United States",
+            "Brazil"
+        ],
+        "correct": "United States",
+        "explanation": "The U.S. continues to be a global leader in producing ICT graduates at all degree levels [61, 64, 65].",
+        "topic": "AI Education"
+    },
+    {
+        "question": "What percentage of U.S. universities have an AI-related acceptable use policy as of early 2025?",
+        "options": [
+            "10%",
+            "23%",
+            "39%",
+            "86%"
+        ],
+        "correct": "39%",
+        "explanation": "As of early 2025, 39% of higher education institutions have an AI-related acceptable use policy, up from 23% in 2024 [66].",
+        "topic": "AI Education"
+    },
+    {
+        "question": "According to global public opinion, what percentage of people expect AI to save them time?",
+        "options": [
+            "13%",
+            "36%",
+            "55%",
+            "83%"
+        ],
+        "correct": "55%",
+        "explanation": "Globally, 55% of respondents agreed that AI will save them time [67, 68].",
+        "topic": "Public Opinion"
+    },
+    {
+        "question": "In which country is the public most optimistic about the benefits of AI products (83% agreeing benefits outweigh drawbacks)?",
+        "options": [
+            "USA",
+            "Canada",
+            "China",
+            "Germany"
+        ],
+        "correct": "China",
+        "explanation": "China shows the highest public optimism regarding AI, with 83% agreeing its benefits outweigh drawbacks [68-70].",
+        "topic": "Public Opinion"
+    },
+    {
+        "question": "What is the sentiment among U.S. citizens regarding self-driving cars according to the American Automobile Association?",
+        "options": [
+            "61% trust them",
+            "61% fear them",
+            "Only 5% are aware of them",
+            "Fear has peaked at 90% in 2024"
+        ],
+        "correct": "61% fear them",
+        "explanation": "The AAA survey found that 61% of people in the U.S. fear self-driving cars, while only 13% trust them [71].",
+        "topic": "Public Opinion"
+    },
+    {
+        "question": "How did carbon emissions from training notable AI models change from GPT-3 (2020) to Llama 3.1 405B (2024)?",
+        "options": [
+            "Emissions decreased due to efficiency",
+            "Emissions rose from 588 tons to 8,930 tons",
+            "GPT-4 remains the highest emitter at 5,184 tons",
+            "Modern models have nearly zero carbon footprint"
+        ],
+        "correct": "Emissions rose from 588 tons to 8,930 tons",
+        "explanation": "Carbon emissions from training rose from 588 tons for GPT-3 to 8,930 tons for Llama 3.1 405B [72, 73].",
+        "topic": "Scale & Infrastructure"
+    },
+    {
+        "question": "What is the reported annual growth rate of training compute for notable AI models?",
+        "options": [
+            "Compute doubles every month",
+            "Compute doubles every five months",
+            "Compute doubles every two years",
+            "Compute has plateaued in 2024"
+        ],
+        "correct": "Compute doubles every five months",
+        "explanation": "The report states that training compute for notable models doubles every five months [12].",
+        "topic": "Scale & Infrastructure"
+    },
+    {
+        "question": "Which major tech company announced a 1.6 billion dollar deal to revive a nuclear reactor at Three Mile Island to power data centers?",
+        "options": [
+            "Google",
+            "Meta",
+            "Amazon",
+            "Microsoft"
+        ],
+        "correct": "Microsoft",
+        "explanation": "Microsoft announced a deal with Constellation Energy to revive the Three Mile Island nuclear reactor [74].",
+        "topic": "Scale & Infrastructure"
+    },
+    {
+        "question": "What was the estimated training cost of OpenAI's GPT-4 according to AI Index estimates?",
+        "options": [
+            "670 dollars",
+            "160,000 dollars",
+            "79 million dollars",
+            "1 billion dollars"
+        ],
+        "correct": "79 million dollars",
+        "explanation": "The training costs for OpenAI's GPT-4 were estimated to be around 79 million dollars [75, 76].",
+        "topic": "Scale & Infrastructure"
+    },
+    {
+        "question": "How much power did the Llama 3.1 405B model require for training compared to the original 2017 Transformer?",
+        "options": [
+            "The same amount",
+            "10 times more",
+            "100 times more",
+            "Over 5,000 times more"
+        ],
+        "correct": "Over 5,000 times more",
+        "explanation": "Llama 3.1 405B used 25.3 million watts, over 5,000 times more than the 2017 Transformer [72].",
+        "topic": "Scale & Infrastructure"
+    },
+    {
+        "question": "What new model reasoning paradigm introduced by OpenAI in 2024 uses 'inference-time compute' to iteratively check answers?",
+        "options": [
+            "GPT-4o",
+            "The 'o series' (o1, o3)",
+            "Llama 3.1",
+            "Claude 3.5"
+        ],
+        "correct": "The 'o series' (o1, o3)",
+        "explanation": "The o1 and o3 models are designed to iteratively reason through their outputs using test-time compute [77-79].",
+        "topic": "New Paradigms"
+    },
+    {
+        "question": "What is the primary drawback of models using inference-time compute like o1 compared to standard models like GPT-4o?",
+        "options": [
+            "They are less accurate",
+            "They are cheaper but slower",
+            "They are significantly more expensive and 30 times slower",
+            "They cannot process text"
+        ],
+        "correct": "They are significantly more expensive and 30 times slower",
+        "explanation": "While they improve reasoning, o1 models are nearly six times more expensive and 30 times slower than GPT-4o [78, 80].",
+        "topic": "New Paradigms"
+    },
+    {
+        "question": "Which 2024 model released by Nvidia achieved top scores on vision-language tasks like OCRBench?",
+        "options": [
+            "Llama 3.3",
+            "Gemini 2.0",
+            "NVLM (D, H, X)",
+            "Stable Video 4D"
+        ],
+        "correct": "NVLM (D, H, X)",
+        "explanation": "Nvidia released three NVLM models for vision-language tasks achieving top scores on OCRBench [81].",
+        "topic": "New Paradigms"
+    },
+    {
+        "question": "The 'Computer Use' agentic capability released in late 2024 allows which model to move the cursor and autonomously complete tasks?",
+        "options": [
+            "GPT-4o",
+            "Claude 3.5 Sonnet",
+            "Gemini 1.5 Pro",
+            "Llama 3.1"
+        ],
+        "correct": "Claude 3.5 Sonnet",
+        "explanation": "Anthropic's 'Computer Use' feature allows Claude 3.5 Sonnet to autonomously complete tasks on a user's computer [82].",
+        "topic": "New Paradigms"
+    },
+    {
+        "question": "What architectural improvement does the Falcon Mamba model utilize to be more efficient than standard transformer-based models?",
+        "options": [
+            "Liquid Neural Networks",
+            "State Space Language Model (SSLM)",
+            "Recurrent Convolutional Nets",
+            "Quantum-inspired gates"
+        ],
+        "correct": "State Space Language Model (SSLM)",
+        "explanation": "Falcon Mamba is built on the SSLM architecture, making it more efficient than traditional transformer models [83].",
+        "topic": "New Paradigms"
+    },
+    {
+        "question": "According to the BetterBench study, how many prominent AI benchmarks failed to report statistical significance?",
+        "options": [
+            "0",
+            "5 out of 24",
+            "14 out of 24",
+            "All of them"
+        ],
+        "correct": "14 out of 24",
+        "explanation": "A systematic analysis of 24 benchmarks found that 14 failed to report statistical significance [84].",
+        "topic": "Technical Benchmarks"
+    },
+    {
+        "question": "What was the observed drop in inference cost for PhD-level science questions (GPQA Diamond) between 2022 and 2024?",
+        "options": [
+            "5 times cheaper",
+            "9 times cheaper",
+            "Over 100 times cheaper",
+            "There was no drop"
+        ],
+        "correct": "9 times cheaper",
+        "explanation": "The report notes that depending on the task, inference prices have fallen anywhere from 9 to 900 times per year [17, 18].",
+        "topic": "R&D Trends"
+    },
+    {
+        "question": "Which country had the highest percentage of AI publications originating from the education sector (84.5%)?",
+        "options": [
+            "USA",
+            "China",
+            "United Kingdom",
+            "India"
+        ],
+        "correct": "China",
+        "explanation": "China has the highest percentage of AI publications (84.45%) originating from the education sector [85].",
+        "topic": "R&D Trends"
+    },
+    {
+        "question": "In the context of AI safety, what is 'shallow safety alignment'?",
+        "options": [
+            "Training only a small part of the model",
+            "A model's safeguards being limited to the first few words of a response",
+            "Safety alignment that only works in English",
+            "Models that refuse every prompt"
+        ],
+        "correct": "A model's safeguards being limited to the first few words of a response",
+        "explanation": "Shallow safety alignment is the concept that safeguards are often limited to the first few tokens, making models vulnerable to adversarial attacks [86].",
+        "topic": "Responsible AI"
+    },
+    {
+        "question": "What percentage of U.S. high schools offered Computer Science courses in the 2023-24 school year?",
+        "options": [
+            "15%",
+            "35%",
+            "60%",
+            "100%"
+        ],
+        "correct": "60%",
+        "explanation": "Access to CS education has increased from 35% in 2017-18 to 60% of U.S. high schools in 2023-24 [87].",
+        "topic": "AI Education"
+    }
 ]
