@@ -359,5 +359,918 @@
     "explanation": "GPQA is a Google-proof Q&A benchmark featuring difficult PhD-level science questions [44, 45].",
     "topic": "Technical Benchmarking & Performance"
 }
+,
 
+{
+    "question": "Hvilken type AI er dedikert til å bistå med eller ta over spesifikke oppgaver?",
+    "options": [
+"General AI (AGI)",
+"Super AI",
+"Narrow AI",
+"Symbolic AI"
+    ],
+    "correct": "Narrow AI",
+    "explanation": "**Narrow AI** er spesialisert for å håndtere enkelte, definerte oppgaver som stemmeassistenter eller ansiktsgjenkjenning [1]. Denne typen AI skiller seg fra visjoner om maskiner med menneskelignende bevissthet [1].",
+    "topic": "AI Fundamentals & History"
+},
+{
+    "question": "Hvilken historisk test anses ikke lenger som et ambisiøst mål av AI Index 2025 fordi den allerede er passert?",
+    "options": [
+"Turing-testen",
+"Winograd-testen",
+"Voight-Kampff-testen",
+"Lovlace-testen"
+    ],
+    "correct": "Turing-testen",
+    "explanation": "Turing-testen anses ikke lenger som et ambisiøst mål etter å ha blitt passert av dagens sofistikerte systemer [2]. Rapporten bemerker at AI-adopsjon nå skjer i et tempo uten sidestykke [2].",
+    "topic": "AI Fundamentals & History"
+},
+{
+    "question": "Hvilken faktor beskrives som hovedårsaken til økt bruk av AI i dag?",
+    "options": [
+"Tilgjengelighet på mer data",
+"Kraftigere prosessorer og skytjenester",
+"Økt tilkobling mellom enheter",
+"Alle de ovennevnte"
+    ],
+    "correct": "Alle de ovennevnte",
+    "explanation": "Den økte bruken av AI skyldes en kombinasjon av **datamengde**, **maskinvare** og **konnektivitet** [3]. Tilgjengeligheten av skytjenester har også vært en kritisk driver [3].",
+    "topic": "AI Fundamentals & History"
+},
+{
+    "question": "Hvor mye har antallet AI-patenter økt i perioden mellom 2010 og 2023?",
+    "options": [
+"Fra ca. 10 000 til 50 000",
+"Fra 3 833 til 122 511",
+"Den har doblet seg hvert år",
+"Den har forblitt stabil"
+    ],
+    "correct": "Fra 3 833 til 122 511",
+    "explanation": "Mellom 2010 og 2023 vokste antallet AI-patenter betydelig fra under fire tusen til over hundre og tjue tusen [4, 5]. Bare i det siste året steg tallet med 29,6 % [5].",
+    "topic": "Industry Trends & Economics"
+},
+{
+    "question": "Hvilket land hadde flest AI-patenter per 100 000 innbyggere i 2023?",
+    "options": [
+"Kina",
+"USA",
+"Sør-Korea",
+"Luxembourg"
+    ],
+    "correct": "Sør-Korea",
+    "explanation": "Sør-Korea ledet an med **17,3 AI-patenter per 100 000 innbyggere** i 2023 [6, 7]. Luxembourg og Kina fulgte på de neste plassene i denne per capita-rangeringen [6].",
+    "topic": "Industry Trends & Economics"
+},
+{
+    "question": "Hvor mye private investeringer tiltrakk Generativ AI i 2024 globalt sett?",
+    "options": [
+"$4,5 milliarder",
+"$9,3 milliarder",
+"$33,9 milliarder",
+"$109,1 milliarder"
+    ],
+    "correct": "$33,9 milliarder",
+    "explanation": "Generativ AI tiltrakk seg **$33,9 milliarder** i private investeringer i 2024, en økning på 18,7 % fra året før [8, 9]. USA sto for den desidert største andelen av disse investeringene [9].",
+    "topic": "Industry Trends & Economics"
+},
+{
+    "question": "Hvilken region har hatt den mest signifikante veksten i organisatorisk AI-bruk det siste året?",
+    "options": [
+"USA",
+"Storkina (Greater China)",
+"Europa",
+"Sørøst-Asia"
+    ],
+    "correct": "Storkina (Greater China)",
+    "explanation": "Storkina viste en av de mest betydningsfulle vekstkurvene med en økning på **27 prosentpoeng** i organisatorisk AI-bruk [10]. Europa fulgte etter med en økning på 23 prosentpoeng [10].",
+    "topic": "Industry Trends & Economics"
+},
+{
+    "question": "Hvor mye utgjorde de private AI-investeringene i USA sammenlignet med Kina i 2024?",
+    "options": [
+"USA investerte 2 ganger mer",
+"USA investerte 5,5 ganger mer",
+"USA investerte 11,7 ganger mer",
+"Kina investerte mer enn USA"
+    ],
+    "correct": "USA investerte 11,7 ganger mer",
+    "explanation": "I 2024 var de $109,1 milliardene investert i USA **11,7 ganger større** enn beløpet investert i Kina [11]. Dette gapet i private investeringer mellom USA og andre regioner fortsetter å utvides [12].",
+    "topic": "Industry Trends & Economics"
+},
+{
+    "question": "Hvilken sektor leder an i produksjonen av 'høyt siterte' (topp 100) AI-publikasjoner?",
+    "options": [
+"Industrien",
+"Regjeringer",
+"Akademia",
+"Ideelle organisasjoner"
+    ],
+    "correct": "Akademia",
+    "explanation": "Selv om industrien leder på modellutvikling, forblir **akademia** den ledende institusjonelle produsenten av høyt siterte publikasjoner [13]. Akademiske institusjoner sto for 84,9 % av alle AI-publikasjoner globalt i 2023 [14].",
+    "topic": "Industry Trends & Economics"
+},
+{
+    "question": "Hva er den rapporterte kostnaden per million tokens for en modell som Gemini-1.5-Flash-8B i slutten av 2024?",
+    "options": [
+"$20.00",
+"$1.00",
+"$0.50",
+"$0.07"
+    ],
+    "correct": "$0.07",
+    "explanation": "Kostnaden for å spørre en AI-modell falt fra $20.00 i 2022 til bare **$0.07** per million tokens i oktober 2024 [15]. Dette representerer en mer enn 280-dobbel reduksjon på omtrent 18 måneder [15].",
+    "topic": "Industry Trends & Economics"
+},
+{
+    "question": "Hvilket land ledet i antall AI-relaterte lovforslag vedtatt i 2024?",
+    "options": [
+"USA",
+"Russland",
+"Belgia",
+"Portugal"
+    ],
+    "correct": "Russland",
+    "explanation": "Russland ledet med **sju lover** i 2024, etterfulgt av Belgia og Portugal med fem hver [16]. Siden 2016 er det imidlertid USA som har vedtatt flest lover totalt [17].",
+    "topic": "Industry Trends & Economics"
+},
+{
+    "question": "Hvor mange AI-relaterte hendelser ble rapportert i AI Incidents Database i 2024?",
+    "options": [
+"122",
+"155",
+"233",
+"511"
+    ],
+    "correct": "233",
+    "explanation": "Antallet rapporterte hendelser steg til **233 i 2024**, noe som er en rekordhøy økning på 56,4 % fra året før [18, 19]. Databasen sporer etisk misbruk som ansiktsgjenkjenning som fører til feilaktige arrestasjoner [20].",
+    "topic": "Responsible AI, Fairness & Bias"
+},
+{
+    "question": "Hva er 'MMMU' et akronym for i kontekst av AI-benchmarking?",
+    "options": [
+"Massive Multi-discipline Multimodal Understanding",
+"Multiple Model Machine Understanding",
+"Modern Mathematical Model Utility",
+"Multimodal Matrix Utility Unit"
+    ],
+    "correct": "Massive Multi-discipline Multimodal Understanding",
+    "explanation": "MMMU er en omfattende benchmark designet for å teste **multimodal forståelse og resonnering** på ekspertnivå [21, 22]. Mellom 2023 og 2024 steg AI-scorene på denne testen med 18,8 prosentpoeng [23].",
+    "topic": "Technical Benchmarking & Performance"
+},
+{
+    "question": "Hvor godt presterte AI-agenter på RE-Bench når de fikk et tidsbudsjett på 2 timer sammenlignet med mennesker?",
+    "options": [
+"Mennesker var dobbelt så gode",
+"AI-systemer scoret fire ganger høyere enn mennesker",
+"De scoret likt",
+"AI-systemer klarte ingen av oppgavene"
+    ],
+    "correct": "AI-systemer scoret fire ganger higher enn mennesker",
+    "explanation": "I innstillinger med kort tidshorisont (2 timer) scoret de beste AI-systemene **fire ganger høyere** enn menneskelige eksperter [21, 24]. Ved 32 timer går imidlertid menneskelig ytelse forbi AI [24, 25].",
+    "topic": "Technical Benchmarking & Performance"
+},
+{
+    "question": "Hvilken benchmark brukes spesifikt for å teste AI på vanskelige vitenskapelige spørsmål på PhD-nivå?",
+    "options": [
+"MMLU",
+"HumanEval",
+"GPQA Diamond",
+"GSM8K"
+    ],
+    "correct": "GPQA Diamond",
+    "explanation": "GPQA Diamond består av 448 vanskelige flervalgsoppgaver som er laget for å være **Google-sikre** og krever PhD-nivå kunnskap [26, 27]. Menneskelige eksperter oppnår en nøyaktighet på 81,3 % på dette settet [27].",
+    "topic": "Technical Benchmarking & Performance"
+},
+{
+    "question": "Hva skjedde med ytelsen til AI på kodingstesten SWE-bench mellom 2023 og 2024?",
+    "options": [
+"Den sank på grunn av vanskeligere oppgaver",
+"Den steg fra 4,4 % til 71,7 %",
+"Den steg med nøyaktig 10 %",
+"Den forble under 5 %"
+    ],
+    "correct": "Den steg fra 4,4 % til 71,7 %",
+    "explanation": "AI-systemers evne til å løse komplekse kodingsproblemer på SWE-bench økte dramatisk fra **4,4 % i 2023 til 71,7 % i 2024** [21, 23]. Den nåværende lederen er OpenAI sin o3-modell [28].",
+    "topic": "Technical Benchmarking & Performance"
+},
+{
+    "question": "Hva er formålet med 'LMSYS Chatbot Arena'?",
+    "options": [
+"Å måle modellens hastighet i Python",
+"Å rangere LLM-er basert på menneskelige preferanser i blindtester",
+"Å teste modellenes evne til å spille sjakk",
+"Å måle hvor mye strøm en GPU bruker under trening"
+    ],
+    "correct": "Å rangere LLM-er basert på menneskelige preferanser i blindtester",
+    "explanation": "Chatbot Arena er en åpen plattform der mennesker rangerer modeller gjennom **side-om-side-evalueringer** [29, 30]. Gapet mellom de 10 øverste modellene her har smalnet betraktelig over tid [30].",
+    "topic": "Technical Benchmarking & Performance"
+},
+{
+    "question": "Hva er en 'SimpleQA' benchmark rettet mot å evaluere?",
+    "options": [
+"Matematisk logikk",
+"Modellers faktualitet og evne til å unngå hallusinasjoner",
+"Koding av enkle nettsider",
+"Bildegjenkjenning av hunder og katter"
+    ],
+    "correct": "Modellers faktualitet og evne til å unngå hallusinasjoner",
+    "explanation": "SimpleQA er en av de nyere evalueringene som har dukket opp for å måle **faktualitet og sannferdighet** hos AI-modeller [31]. Den adresserer utfordringen med at modeller ofte genererer troverdig, men usann informasjon [32].",
+    "topic": "Technical Benchmarking & Performance"
+},
+{
+    "question": "Hvilken modell holdt rekorden på kodingstesten HumanEval med en score på 100 % i februar 2025?",
+    "options": [
+"GPT-4o",
+"Claude 3.5 Sonnet (HPT)",
+"Gemini 1.5 Pro",
+"DeepSeek-V3"
+    ],
+    "correct": "Claude 3.5 Sonnet (HPT)",
+    "explanation": "Claude 3.5 Sonnet (HPT) oppnådde en perfekt score på **100 %** på HumanEval-benchmarken [33, 34]. Rapporten bemerker at mange grunnleggende kodingstester nå begynner å bli mette [33].",
+    "topic": "Technical Benchmarking & Performance"
+},
+{
+    "question": "Hva beskriver best trenden for gapet mellom 'open-weight' og 'closed-weight' modeller i 2024?",
+    "options": [
+"Gapet har økt betydelig",
+"Gapet har nesten forsvunnet",
+"Open-weight modeller har sluttet å eksistere",
+"Closed-weight modeller er nå 50 % bedre"
+    ],
+    "correct": "Gapet har nesten forsvunnet",
+    "explanation": "Gapet mellom lukkede og åpne modeller har nesten forsvunnet, fra en forskjell på 8,0 % i januar 2024 til bare **1,7 % i februar 2025** [23, 35]. Dette tyder på at open-weight modeller nå når frontlinjen [23].",
+    "topic": "Technical Benchmarking & Performance"
+},
+{
+    "question": "Hva er 'MixEval-Hard' rettet mot å evaluere?",
+    "options": [
+"Bildegenerering av mat",
+"Evaluering av chat-modeller ved hjelp av en blanding av benchmarks",
+"Hastigheten på modelltrening",
+"Sikkerhet mot hackerangrep"
+    ],
+    "correct": "Evaluering av chat-modeller ved hjelp av en blanding av benchmarks",
+    "explanation": "MixEval er et rammeverk som utleder 'wisdom of the crowd' fra en **blanding av LLM-benchmarks** [36, 37]. Det brukes for å gi en bredere vurdering av chat-modellers kapabiliteter [36].",
+    "topic": "Technical Benchmarking & Performance"
+},
+{
+    "question": "Hvor stor andel av AI-programmereres tid brukes typisk på databehandling (rensing, merking etc.)?",
+    "options": [
+"20 %",
+"50 %",
+"80 %",
+"95 %"
+    ],
+    "correct": "80 %",
+    "explanation": "AI-programmerere bruker **80 % av tiden** sin på databehandling som rensing og merking [38]. Selve programmeringen av AI utgjør en betydelig mindre del av arbeidsdagen [38].",
+    "topic": "Data Strategy & Training"
+},
+{
+    "question": "Hva refererer 'Data Commons' til i kontekst av AI-trening?",
+    "options": [
+"Data lagret i private skyer",
+"Massive mengder offentlig tilgjengelig web-data brukt til trening",
+"Data som eies av myndighetene",
+"Datasett som kun inneholder bilder"
+    ],
+    "correct": "Massive mengder offentlig tilgjengelig web-data brukt til trening",
+    "explanation": "Data commons består av offentlig web-data som AI-modeller er avhengige av for **trening i stor skala** [39]. Denne ressursen krymper nå raskt på grunn av nye restriksjoner mot skraping [39].",
+    "topic": "Data Strategy & Training"
+},
+{
+    "question": "Hvilket problem oppsto da Amazon Go skulle trene sine algoritmer?",
+    "options": [
+"De hadde for mye data",
+"Det fantes ingen treningssett med folk som surfer i butikker",
+"De hadde ikke råd til GPU-er",
+"Algoritmene nektet å gjenkjenne mat"
+    ],
+    "correct": "Det fantes ingen treningssett med folk som surfer i butikker",
+    "explanation": "Amazon Go var en så unik idé at det ikke fantes eksisterende treningsdata for folk som handler på denne måten [40, 41]. De løste dette ved å lage et **virtuelt shoppingmiljø** for å generere data [40, 41].",
+    "topic": "Data Strategy & Training"
+},
+{
+    "question": "Hva er 'syntetiske data'?",
+    "options": [
+"Data som er stjålet fra internett",
+"Data som er generert av en algoritme i stedet for å være samlet fra den virkelige verden",
+"Data som er kryptert for personvern",
+"Data som kun består av tekst uten bilder"
+    ],
+    "correct": "Data som er generert av en algoritme i stedet for å være samlet fra den virkelige verden",
+    "explanation": "Syntetiske data brukes ofte når man mangler data fra den virkelige verden for å trene en modell [42, 43]. Et eksempel er hvordan man kan fylle ut manglende historiske data for å forbedre prediksjoner [43].",
+    "topic": "Data Strategy & Training"
+},
+{
+    "question": "Hva skjedde med andelen 'restricted tokens' i C4 common crawl-datasettet mellom 2023 og 2024?",
+    "options": [
+"Den sank fra 10 % til 2 %",
+"Den forble stabil på 5 %",
+"Den hoppet fra 5–7 % til 20–33 %",
+"Den ble redusert til null"
+    ],
+    "correct": "Den hoppet fra 5–7 % til 20–33 %",
+    "explanation": "Andelen restrikerte tokens i vedlikeholdte domener økte dramatisk til **20–33 %** i 2024 [39]. Dette skyldes at nettsteder implementerer nye protokoller for å hindre AI-skraping [39].",
+    "topic": "Data Strategy & Training"
+},
+{
+    "question": "Hvilken type læring krever 'data labeling' (merking av data)?",
+    "options": [
+"Unsupervised learning",
+"Reinforcement learning",
+"Supervised learning",
+"Clustering"
+    ],
+    "correct": "Supervised learning",
+    "explanation": "I **supervised learning** (veiledet læring) trenger man merkede data for å lære algoritmen sammenhengen mellom input og ønsket output [42, 43]. Dette er i motsetning til unsupervised learning som ser etter mønstre i umerkede data [44].",
+    "topic": "Data Strategy & Training"
+},
+{
+    "question": "Hva er en 'outlier' i et datasett?",
+    "options": [
+"Et gjennomsnittlig datapunkt",
+"Et datapunkt som skiller seg signifikant fra andre observerte punkter",
+"En person som ikke bruker AI",
+"En feil i modellens koding"
+    ],
+    "correct": "Et datapunkt som skiller seg signifikant fra andre observerte punkter",
+    "explanation": "En **outlier** er et avvikende datapunkt, og problemets natur avgjør hvordan disse skal håndteres [38, 45]. De kan representere feil eller viktige unntak i dataene [45].",
+    "topic": "Data Strategy & Training"
+},
+{
+    "question": "Hvorfor er 'license misattribution' (feilaktig lisensiering) i datasett en risiko?",
+    "options": [
+"Det gjør modellene tregere",
+"Det skaper juridiske og etiske risikoer for AI-utviklere",
+"Det øker strømforbruket",
+"Det er ikke en risiko"
+    ],
+    "correct": "Det skaper juridiske og etiske risikoer for AI-utviklere",
+    "explanation": "Feilmerking av lisenser kan føre til brudd på opphavsrett, juridisk ansvar og problemer med å sikre rettferdig kompensasjon til skapere [46]. Det hindrer også **transparens og reproduserbarhet** i AI-forskning [46].",
+    "topic": "Data Strategy & Training"
+},
+{
+    "question": "Ifølge Andrew Ng, hva bør styre ditt valg av dev- og testsett?",
+    "options": [
+"De bør komme fra de samme dataene som trengingssettet",
+"De bør reflektere dataene du forventer å få i fremtiden og ønsker å gjøre det bra på",
+"De bør alltid være minst 1 million eksempler",
+"De bør kun inneholde perfekte data uten støy"
+    ],
+    "correct": "De bør reflektere dataene du forventer å få i fremtiden og ønsker å gjøre det bra på",
+    "explanation": "Du bør velge dev- og testsett som representerer de dataene du faktisk bryr deg om å prestere godt på i fremtiden [47]. Dette sikrer at teamet **optimaliserer for det rette målet** [47].",
+    "topic": "Machine Learning Strategy"
+},
+{
+    "question": "Hva er den største fordelen med å ha en 'single-number evaluation metric'?",
+    "options": [
+"Det gjør kodingen enklere",
+"Det lar deg raskt avgjøre om en ny idé er bedre enn den forrige",
+"Det reduserer behovet for data",
+"Det er påkrevd av loven"
+    ],
+    "correct": "Det lar deg raskt avgjøre om en ny idé er bedre enn den forrige",
+    "explanation": "En enkelt evalueringsmetrikk gjør det mulig for teamet å raskt vurdere endringer og ta beslutninger om hvilken retning de skal gå [47, 48]. Uten dette kan det være vanskelig å sammenligne modeller med ulike styrker [47].",
+    "topic": "Machine Learning Strategy"
+},
+{
+    "question": "Hva er Andrew Ng sin anbefaling for å starte et nytt AI-prosjekt?",
+    "options": [
+"Bruk måneder på å designe det perfekte systemet først",
+"Bygg et grunnleggende system raskt, og bruk feilanalyse for å iterere",
+"Samle alt mulig data før du skriver en eneste linje med kode",
+"Ansett 100 eksperter på området med en gang"
+    ],
+    "correct": "Bygg et grunnleggende system raskt, og bruk feilanalyse for å iterere",
+    "explanation": "Anbefalingen er å ikke starte med å bygge det perfekte systemet, men heller trene et **enkelt system raskt** og deretter bruke feilanalyse for å finne retningen videre [49]. Dette sparer tid ved å unngå blindveier [50].",
+    "topic": "Machine Learning Strategy"
+},
+{
+    "question": "Hva kaller Andrew Ng en metrikk som definerer et 'minimumskrav' (f.eks. kjøretid) man må møte?",
+    "options": [
+"Optimizing metric",
+"Satisficing metric",
+"Threshold metric",
+"Standard metric"
+    ],
+    "correct": "Satisficing metric",
+    "explanation": "En **satisficing metric** er et krav som må være 'godt nok', mens man prøver å maksimere en 'optimizing metric' [48]. For eksempel kan nøyaktighet være målet som maksimeres, mens falske positiver må holdes under en viss terskel [48].",
+    "topic": "Machine Learning Strategy"
+},
+{
+    "question": "Når bør man ifølge Andrew Ng vurdere å endre evalueringsmetrikken sin?",
+    "options": [
+"Hver uke for å holde teamet på tå hev",
+"Hvis metrikken ikke lenger måler det som er viktigst for brukerne",
+"Aldri, man må holde seg til planen",
+"Bare hvis man går tom for data"
+    ],
+    "correct": "Hvis metrikken ikke lenger måler det som er viktigst for brukerne",
+    "explanation": "Hvis du oppdager at din nåværende metrikk ikke lenger måler det som er mest kritisk for suksessen til produktet ditt, må du endre den [51]. Det er viktig at teamet **optimaliserer for det rette resultatet** [48].",
+    "topic": "Machine Learning Strategy"
+},
+{
+    "question": "Hva er Andrew Ng sitt syn på å trene og teste på data fra ulike distribusjoner?",
+    "options": [
+"Det er umulig å få til å fungere",
+"Det er ofte nødvendig i den moderne æra med store datasett fra internett",
+"Det er alltid bedre å bare bruke små mengder data fra samme distribusjon",
+"Det bør bare gjøres i akademisk forskning"
+    ],
+    "correct": "Det er ofte nødvendig i den moderne æra med store datasett fra internett",
+    "explanation": "I en tid med 'big data' har vi ofte tilgang til enorme mengder internettdata som er litt annerledes enn våre faktiske brukerdata, men likevel nyttige for trening [52, 53]. Utfordringen er å håndtere **data mismatch**-problemet som kan oppstå [54].",
+    "topic": "Machine Learning Strategy"
+},
+{
+    "question": "Hva er Andrew Ng sitt råd hvis du har et veldig stort dev-sett?",
+    "options": [
+"Se på alle eksemplene manuelt",
+"Del det i to deler: ett 'Eyeball' dev-sett og ett 'Blackbox' dev-sett",
+"Slett halvparten for å spare plass",
+"Bruk det som treningsdata i stedet"
+    ],
+    "correct": "Del det i to deler: ett 'Eyeball' dev-sett og ett 'Blackbox' dev-sett",
+    "explanation": "Ved å ha et **Eyeball dev-sett** kan du gjøre manuell feilanalyse uten å risikere å overtilpasse hele dev-settet til dine manuelle beslutninger [55, 56]. 'Blackbox'-delen brukes kun for å måle nøyaktighet uten menneskelig innblanding [56].",
+    "topic": "Machine Learning Strategy"
+},
+{
+    "question": "Hva er definisjonen på 'Error Analysis' i Machine Learning Yearning?",
+    "options": [
+"Å telle hvor mange feil modellen gjør totalt",
+"Prosessen med å undersøke feilklassifiserte eksempler for å forstå årsaken",
+"Å slette alle feil fra datasettet",
+"Å programmere en robot til å fikse koden selv"
+    ],
+    "correct": "Prosessen med å undersøke feilklassifiserte eksempler for å forstå årsaken",
+    "explanation": "**Error Analysis** innebærer å manuelt gå gjennom eksempler algoritmen tok feil på for å finne mønstre og årsaker [57]. Dette hjelper deg med å prioritere hvilke forbedringer som vil gi størst effekt [57, 58].",
+    "topic": "Machine Learning Strategy"
+},
+{
+    "question": "Hvorfor sammenligner vi AI-ytelse med menneskelig ytelse?",
+    "options": [
+"For å gjøre AI-en mer menneskelig",
+"Fordi det er lettere å skaffe merkede data for oppgaver mennesker gjør godt",
+"Fordi det er det eneste målet på intelligens",
+"Det er ingen nytte i å sammenligne dem"
+    ],
+    "correct": "Fordi det er lettere å skaffe merkede data for oppgaver mennesker gjør godt",
+    "explanation": "Det er enklere å få tak i data og definere hva som er 'korrekt' for oppgaver som mennesker allerede er flinke til, som bilde- og talegjenkjenning [59, 60]. Når maskiner overgår mennesker, blir det vanskeligere å skaffe **optimale merkelapper** (labels) [60].",
+    "topic": "Machine Learning Strategy"
+},
+{
+    "question": "Hva er hovedkilden til feil i maskinlæring ifølge Andrew Ng?",
+    "options": [
+"Bias og Variance",
+"Dårlig internettforbindelse",
+"For lite minne på GPU-en",
+"Bruken av feil programmeringsspråk"
+    ],
+    "correct": "Bias og Variance",
+    "explanation": "**Bias og Variance** beskrives som de to store kildene til feil i maskinlæringssystemer [61]. Ved å diagnostisere disse kan man velge riktig teknikk for å redusere feilraten [54].",
+    "topic": "Machine Learning Strategy"
+},
+{
+    "question": "Hvilken test foreslår Andrew Ng for å finne ut om feilen ligger i søkealgoritmen eller i skåringsfunksjonen?",
+    "options": [
+"Turing-testen",
+"Optimization Verification test",
+"A/B-testing",
+"Unit-testing"
+    ],
+    "correct": "Optimization Verification test",
+    "explanation": "**Optimization Verification test** brukes for å avgjøre om feilen skyldes at søkealgoritmen ikke fant det matematiske maksimumet, eller om selve skåringsfunksjonen er unøyaktig [62, 63]. Dette er spesielt relevant i komplekse systemer som talegjenkjenning [62].",
+    "topic": "Machine Learning Strategy"
+},
+{
+    "question": "Hva kjennetegner 'End-to-end deep learning'?",
+    "options": [
+"At man må skrive all koden manuelt fra start til slutt",
+"At algoritmen går direkte fra rå input til ønsket output uten mellomtrinn",
+"At treningen aldri tar slutt",
+"At man kun bruker CPU-er til trening"
+    ],
+    "correct": "At algoritmen går direkte fra rå input til ønsket output uten mellomtrinn",
+    "explanation": "I et **end-to-end system** kobler læringsalgoritmen 'inngangsenden' direkte til 'utgangsenden' av systemet [64, 65]. Dette fungerer best når man har store mengder merkede data for begge ender [66].",
+    "topic": "Machine Learning Strategy"
+},
+{
+    "question": "Hvilket problem kan oppstå hvis man bruker end-to-end læring med for lite data?",
+    "options": [
+"Systemet blir for raskt",
+"Systemet kan yte dårligere enn en håndlaget rørledning (pipeline)",
+"Systemet sletter seg selv",
+"Ingenting, data har ingen betydning"
+    ],
+    "correct": "Systemet kan yte dårligere enn en håndlaget rørledning (pipeline)",
+    "explanation": "End-to-end-systemer mangler ofte den menneskelige innsikten som er bygget inn i tradisjonelle rørledninger, og kan derfor prestere dårligere hvis treningssettet er lite [66, 67]. **Hånd-ingeniørkunst** er nyttig når data er mangelvare [67].",
+    "topic": "Machine Learning Strategy"
+},
+{
+    "question": "Hva er fordelen med å dele opp et komplekst problem i en rørledning (pipeline) med flere steg?",
+    "options": [
+"Det ser mer imponerende ut",
+"Man kan bruke data som er tilgjengelig for de mellomliggende modulene",
+"Det krever alltid mer strøm",
+"Det gjør det umulig å fikse feil"
+    ],
+    "correct": "Man kan bruke data som er tilgjengelig for de mellomliggende modulene",
+    "explanation": "En rørledning med flere steg lar deg utnytte datasett som er spesifikke for deloppgaver, som for eksempel egne datasett for å detektere biler eller fotgjengere [68]. Dette gjør det ofte lettere å trene systemet enn en ren end-to-end tilnærming [68, 69].",
+    "topic": "Machine Learning Strategy"
+},
+{
+    "question": "Hva er 'Error analysis by parts'?",
+    "options": [
+"Å reparere maskinvaren bit for bit",
+"Å attribuere hver feil algoritmen gjør til spesifikke deler av en rørledning",
+"Å slette deler av modellen som tar feil",
+"Å gi hver ansatt ansvar for én feil"
+    ],
+    "correct": "Å attribuere hver feil algoritmen gjør til spesifikke deler av en rørledning",
+    "explanation": "Ved å utføre **feilanalyse per del** kan man prioritere hvilken komponent i rørledningen det er mest lønnsomt å forbedre [58, 70]. Man kan erstatte utgangen fra en modul med 'perfekt' menneske-merket data for å se om systemet da fungerer korrekt [71, 72].",
+    "topic": "Machine Learning Strategy"
+},
+{
+    "question": "Hva er en 'Liar’s Dividend' i sammenheng med deepfakes?",
+    "options": [
+"Lønnen til de som lager deepfakes",
+"Muligheten for personer til å nekte for ekte bevis ved å påstå at de er falske",
+"En skattefordel for AI-selskaper",
+"Kostnaden ved å verifisere videoer"
+    ],
+    "correct": "Muligheten for personer til å nekte for ekte bevis ved å påstå at de er falske",
+    "explanation": "Fenomenet **liar's dividend** undergraver ansvarlighet og sannhet ved at folk kan avfeie legitime bevis som 'deepfakes' [73]. Dette er en betydelig etisk bekymring som er fremhevet i AI Index 2025 [73, 74].",
+    "topic": "Responsible AI, Fairness & Bias"
+},
+{
+    "question": "Hvilken trend ser man i transparens hos store modellutviklere ifølge Foundation Model Transparency Index?",
+    "options": [
+"Transparensen synker drastisk",
+"Gjennomsnittlig transparens-score økte fra 37 % til 58 % på under et år",
+"Alle modeller er nå 100 % åpne",
+"Ingen deler lenger informasjon om trening"
+    ],
+    "correct": "Gjennomsnittlig transparens-score økte fra 37 % til 58 % på under et år",
+    "explanation": "Transparensen i økosystemet for grunnmodeller har forbedret seg betydelig mellom oktober 2023 og mai 2024 [75]. Likevel er det fortsatt mye rom for forbedring i hvordan utviklere deler data- og algoritmevalg [75, 76].",
+    "topic": "Responsible AI, Fairness & Bias"
+},
+{
+    "question": "Hva viser forskning om 'implisitt bias' i store språkmodeller (LLM-er) som GPT-4?",
+    "options": [
+"De har ingen bias etter sikkerhetstrening",
+"De fortsetter å utvise implisitte fordommer selv om de er trent til å være nøytrale",
+"De er kun biaserte mot menn",
+"De har bare bias i bildegenerering, ikke tekst"
+    ],
+    "correct": "De fortsetter å utvise implisitte fordommer selv om de er trent til å være nøytrale",
+    "explanation": "Selv modeller designet for å være eksplisitt nøytrale viser **implisitte biaser** som samsvarer med samfunnsmessige stereotyper [77, 78]. De assosierer for eksempel oftere kvinner med humaniora fremfor realfag [78, 79].Disse modellene favoriserer ofte menn for lederroller og forsterker rase- og kjønnsbias i beslutningsprosesser [77, 79].",
+    "topic": "Responsible AI, Fairness & Bias"
+},
+{
+    "question": "Hva er den største barrieren for selskaper som ønsker å implementere ansvarlig AI (RAI)?",
+    "options": [
+"Mangel på støtte fra ledelsen",
+"Kunnskaps- og treningsgap",
+"For høye strømpriser",
+"At det ikke finnes lover på området"
+    ],
+    "correct": "Kunnskaps- og treningsgap",
+    "explanation": "Hele **51 %** av spurte bedriftsledere i en McKinsey-undersøkelse oppga kunnskapsmangel som den største hindringen for RAI-tiltak [80]. Kun 16 % opplevde manglende støtte fra ledelsen som et problem [81].",
+    "topic": "Responsible AI, Fairness & Bias"
+},
+{
+    "question": "Hvilken type AI-hendelse ble oftest rapportert av organisasjoner i 2024?",
+    "options": [
+"Miljøforurensning",
+"Adversarial attacks (fiendtlige angrep)",
+"Tap av fysisk sikkerhet",
+"Modeller som sletter data"
+    ],
+    "correct": "Adversarial attacks (fiendtlige angrep)",
+    "explanation": "**Adversarial attacks** (56 %) og personvernsbrudd (55 %) er de vanligste typene hendelser rapportert av organisasjoner [81]. Dette understreker behovet for robust datasikkerhet og styring [81].",
+    "topic": "Responsible AI, Fairness & Bias"
+},
+{
+    "question": "Hva refererer 'Shallow Safety Alignment' til i AI-forskning?",
+    "options": [
+"At modeller er for trygge",
+"At sikkerhetstiltak er overfladiske og ofte bare begrenset til de første ordene i et svar",
+"At man ikke trenger sikkerhet i små modeller",
+"At vannet i datasenteret er for grunt"
+    ],
+    "correct": "At sikkerhetstiltak er overfladiske og ofte bare begrenset til de første ordene i et svar",
+    "explanation": "**Shallow safety alignment** betyr at en modells forsvarsmekanismer lett kan omgås ved å manipulere starten på svaret [82]. Hvis en bruker får modellen til å starte med 'Sure, here's...', er den langt mer sårbar for angrep [82].",
+    "topic": "Responsible AI, Fairness & Bias"
+},
+{
+    "question": "Hva kjennetegner 'Infectious Jailbreaks' i systemer med flere AI-agenter?",
+    "options": [
+"At AI-en får et ekte datavirus",
+"At kompromittering av én agent sprer seg eksponentielt til andre agenter",
+"At agenter nekter å snakke med hverandre",
+"At alle agenter blir mer effektive"
+    ],
+    "correct": "At kompromittering av én agent sprer seg eksponentielt til andre agenter",
+    "explanation": "Ved å injisere ett enkelt fiendtlig bilde i minnet til én agent, kan skadelig oppførsel spre seg til over en million agenter på få runder [83]. Forskerne kaller dette fenomenet en **ukontrollert kaskade** av systemsvikt [83].",
+    "topic": "Responsible AI, Fairness & Bias"
+},
+{
+    "question": "Hva er formålet med 'HELM Safety' benchmarken?",
+    "options": [
+"Å måle hvor raskt en modell kan svare",
+"Å gi en standardisert evaluering av sikkerhet hos store språkmodeller",
+"Å teste modellenes matematiske ferdigheter",
+"Å måle kvaliteten på bildegenerering"
+    ],
+    "correct": "Å gi en standardisert evaluering av sikkerhet hos store språkmodeller",
+    "explanation": "HELM Safety er en av de nye benchmarkene som bidrar til å fylle gapet for **standardiserte RAI-evalueringer** [18, 24]. Den gir en gjennomsnittsscore for sikkerhet på tvers av ulike modeller [84].",
+    "topic": "Responsible AI, Fairness & Bias"
+},
+{
+    "question": "Hvor mange land refererte til AI i sine lovgivningsprosesser i 2024?",
+    "options": [
+"12",
+"25",
+"57",
+"116"
+    ],
+    "correct": "57",
+    "explanation": "Av 75 analyserte geografiske områder refererte **57 til AI** i minst én lovgivningsprosess i 2024 [85]. Antallet nevnelser av AI i parlamentariske diskusjoner økte med 21,3 % på ett år [86].",
+    "topic": "Politics, Policy & Society"
+},
+{
+    "question": "Hvilket land hadde flest nevnelser av AI i sine parlamentariske diskusjoner i 2024?",
+    "options": [
+"USA",
+"Kina",
+"Spania",
+"Storbritannia"
+    ],
+    "correct": "Spania",
+    "explanation": "Spania ledet i antall AI-nevnelser i lovgivende forsamlinger med **314 tilfeller** i 2024 [85]. Siden 2016 har Spania samlet sett over 1200 slike nevnelser [87].",
+    "topic": "Politics, Policy & Society"
+},
+{
+    "question": "Hvilken del av den amerikanske regjeringen bruker mest penger på AI-kontrakter?",
+    "options": [
+"Utdanningsdepartementet",
+"Forsvarsdepartementet (Department of Defense)",
+"Helsedepartementet",
+"Finansdepartementet"
+    ],
+    "correct": "Forsvarsdepartementet (Department of Defense)",
+    "explanation": "Forsvarsdepartementet sto for hele **75,04 %** av det offentlige AI-forbruket i USA i 2023 [41]. Dette utgjør den desidert største posten i de offentlige AI-investeringene [41].",
+    "topic": "Politics, Policy & Society"
+},
+{
+    "question": "Hvor mye brukte den amerikanske staten på AI-kontrakter per 100 000 innbyggere det siste tiåret?",
+    "options": [
+"$0,32 millioner",
+"$1,58 millioner",
+"$5,2 milliarder",
+"$10 millioner"
+    ],
+    "correct": "$1,58 millioner",
+    "explanation": "USA leder an i offentlig bruk med **$1,58 millioner per 100 000 innbyggere** [88]. Finland og Danmark følger på de neste plassene med ca. $1,3 millioner hver [88].",
+    "topic": "Politics, Society & Ethics"
+},
+{
+    "question": "Hvilket land er mest optimistisk med tanke på at AI-produkter er mer fordelaktige enn skadelige?",
+    "options": [
+"USA (39 %)",
+"Kina (83 %)",
+"Nederland (36 %)",
+"Canada (40 %)"
+    ],
+    "correct": "Kina (83 %)",
+    "explanation": "I land som Kina (83 %) og Indonesia (80 %) ser et stort flertall på AI som mer fordelaktig enn skadelig [89]. Dette står i sterk kontrast til land som USA og Nederland hvor optimismen er betydelig lavere [89].",
+    "topic": "Politics, Society & Ethics"
+},
+{
+    "question": "Hvilken statlig instans i Østerrike ble opprettet ved lov i 2024 for å støtte AI-styring?",
+    "options": [
+"AI-politiet",
+"Service Center for Artificial Intelligence",
+"Digital Governance Board",
+"Austrian AI Office"
+    ],
+    "correct": "Service Center for Artificial Intelligence",
+    "explanation": "Østerrike etablerte et **Service Center for Artificial Intelligence** for å støtte og koordinere AI-styring i medie- og telekomsektoren [90]. Senteret skal også drifte en informasjonsportal for offentlig finansierte AI-prosjekter [90].",
+    "topic": "Politics, Society & Ethics"
+},
+{
+    "question": "Hvilken type lovgivning så man en massiv økning av i amerikanske delstater i 2024?",
+    "options": [
+"Skatt på AI-algoritmer",
+"Lover mot deepfakes i valg og intimt innhold",
+"Forbud mot selvstendig kjørende biler",
+"Påbud om AI i skolen"
+    ],
+    "correct": "Lover mot deepfakes i valg og intimt innhold",
+    "explanation": "Antallet delstatslover rettet mot AI-genererte deepfakes i intimt innhold økte til **36 i 2024** [41]. Lovgivning rettet mot deepfakes i valg steg også kraftig til 20 vedtatte lover [41].",
+    "topic": "Politics, Society & Ethics"
+},
+{
+    "question": "Hvilken Nobelpris ble tildelt for AI-relatert arbeid i 2024?",
+    "options": [
+"Nobelprisen i Fred",
+"Nobelprisen i Litteratur",
+"Nobelprisen i Fysikk og Kjemi",
+"Det ble ikke delt ut noen Nobelpris til AI"
+    ],
+    "correct": "Nobelprisen i Fysikk og Kjemi",
+    "explanation": "AIs rolle i vitenskapen ble anerkjent med Nobelpriser i både **fysikk og kjemi** i 2024 [2]. Prisene ble gitt for fundamentalt arbeid innen dyp læring og proteinfolding [2].",
+    "topic": "Politics, Society & Ethics"
+},
+{
+    "question": "Hva skjedde med kostnaden for trening av de største AI-modellene mellom 2017 og 2024?",
+    "options": [
+"Kostnaden falt drastisk",
+"Kostnaden økte fra noen få hundre dollar til over $190 millioner",
+"Kostnaden har vært konstant på ca. 1 million dollar",
+"Store modeller er nå gratis å trene"
+    ],
+    "correct": "Kostnaden økte fra noen få hundre dollar til over $190 millioner",
+    "explanation": "Trening av toppmodeller har blitt ekstremt dyrt, med **Gemini 1.0 Ultra** anslått til $192 millioner [91, 92]. Til sammenligning kostet den opprinnelige Transformer-modellen i 2017 bare rundt $930 å trene [91].",
+    "topic": "Model Training & Optimization"
+},
+{
+    "question": "Hva refererer 'Test-Time Compute' (eller Inference-Time Compute) til?",
+    "options": [
+"Tiden det tar å laste ned en modell",
+"Bruk av ekstra regnekraft under selve genereringen av et svar for å forbedre resonnering",
+"Trening av modellen på nye datasett",
+"Kjøling av serverne under testing"
+    ],
+    "correct": "Bruk av ekstra regnekraft under selve genereringen av et svar for å forbedre resonnering",
+    "explanation": "Nye paradigmer som 'test-time compute' lar modeller som OpenAI o1 og o3 'tenke' lenger for å løse komplekse problemer [93, 94]. Dette markerer et skifte i hvordan man forbedrer modellenes resonneringsevne [94].",
+    "topic": "Model Training & Optimization"
+},
+{
+    "question": "Hvor mange dager tok det anslagsvis å trene Llama 3.1-405B?",
+    "options": [
+"1 dag",
+"10 dager",
+"Omtrent 50-100 dager",
+"Over 1000 dager"
+    ],
+    "correct": "Omtrent 50-100 dager",
+    "explanation": "Store modeller som Llama 3.1-405B og GPT-4 har nå treningstider som strekker seg over **mange titalls dager** på logaritmisk skala [92]. Dette krever enorme mengder spesialisert maskinvare og strøm [95].",
+    "topic": "Model Training & Optimization"
+},
+{
+    "question": "Hvilken modell holdt rekorden for høyest grounding-score på FACTS-benchmarken i februar 2025?",
+    "options": [
+"gpt-4o",
+"claude-3.5-sonnet",
+"gemini-2.0-flash-exp",
+"o1-preview"
+    ],
+    "correct": "gemini-2.0-flash-exp",
+    "explanation": "Gemini-2.0-Flash-Exp oppnådde den høyeste scoren på **83,6 %** på FACTS-benchmarken for faktualitet [31]. Dette viser kontinuerlig fremgang i å redusere hallusinasjoner i sanntid [31].",
+    "topic": "Model Training & Optimization"
+},
+{
+    "question": "Hva er den estimerte størrelsen på hele webben (inkludert private data) i antall tokens?",
+    "options": [
+"130T",
+"510T",
+"3,100T",
+"10,000T"
+    ],
+    "correct": "3,100T",
+    "explanation": "Det totale datastokken for hele webben anslås til å være rundt **3 100 billioner (T) tokens** [92]. Til sammenligning inneholder Common Crawl bare rundt 130T tokens [92].",
+    "topic": "Model Training & Optimization"
+},
+{
+    "question": "Hvilken ferdighet har sett den største veksten i AI-relaterte stillingsannonser siden 2012-14?",
+    "options": [
+"Python",
+"Data Science",
+"Amazon Web Services (AWS)",
+"Prosjektledelse"
+    ],
+    "correct": "Amazon Web Services (AWS)",
+    "explanation": "Etterspørselen etter AWS-kompetanse i AI-stillinger har eksplodert med en økning på **1 778 %** [96]. Python er fortsatt den mest etterspurte ferdigheten i absolutte tall med nesten 200 000 annonser [96].",
+    "topic": "Economy & Labor Market"
+},
+{
+    "question": "Hvilket land hadde den høyeste konsentrasjonen av AI-talenter i 2024 ifølge LinkedIn?",
+    "options": [
+"USA",
+"Singapore",
+"Israel",
+"Luxembourg"
+    ],
+    "correct": "Israel",
+    "explanation": "Israel topper listen med en AI-talentkonsentrasjon på **1,98 %** [96]. Singapore og Luxembourg følger på de neste plassene med henholdsvis 1,64 % og 1,44 % [96].",
+    "topic": "Economy & Labor Market"
+},
+{
+    "question": "Hvilken ferdighet innen Generativ AI så den største prosentvise veksten i stillingsannonser i 2024?",
+    "options": [
+"Prompt engineering",
+"Retrieval Augmented Generation (RAG)",
+"Large Language Modeling",
+"Microsoft Copilot"
+    ],
+    "correct": "Microsoft Copilot",
+    "explanation": "Etterspørselen etter kompetanse på **Microsoft Copilot** steg med hele 539 % på ett år [96]. RAG fulgte tett etter med en vekst på 487 % [96].",
+    "topic": "Economy & Labor Market"
+},
+{
+    "question": "Hvilket land installerte flest industrielle roboter i 2023?",
+    "options": [
+"Japan",
+"USA",
+"Kina",
+"Tyskland"
+    ],
+    "correct": "Kina",
+    "explanation": "Kina dominerer totalt med **276 300 installerte roboter**, noe som er langt mer enn Japan på andreplass med 46 100 [96]. Denne dominansen fortsetter til tross for en liten moderasjon i veksttakten [10].",
+    "topic": "Economy & Labor Market"
+},
+{
+    "question": "Hva skjedde med ytelsen på kodingstesten BigCodeBench for de beste modellene?",
+    "options": [
+"De klarte nesten alle oppgavene (99 %)",
+"De oppnådde en suksessrate på ca. 35,5 %, langt under menneskelig standard",
+"Ingen modeller klarte en eneste oppgave",
+"De var bedre enn mennesker på alle områder"
+    ],
+    "correct": "De oppnådde en suksessrate på ca. 35,5 %, langt under menneskelig standard",
+    "explanation": "På den vanskelige delen av BigCodeBench oppnår de beste modellene kun rundt **35,5 %**, mens menneskelig standard ligger på 97 % [97, 98]. Dette viser at det fortsatt er et stort gap til menneskelig nivå på komplekse kodingsoppgaver [98].",
+    "topic": "Technical Performance"
+},
+{
+    "question": "Hvilket resonneringsverktøy i LLM-er har forbedret ytelsen betydelig, men feiler fortsatt på komplekse planleggingsoppgaver?",
+    "options": [
+"Bildegjenkjenning",
+"Chain-of-thought (resonneringskjeder)",
+"Raskere prosessorer",
+"Større skjermer"
+    ],
+    "correct": "Chain-of-thought (resonneringskjeder)",
+    "explanation": "Selv om **chain-of-thought** har forbedret ytelsen, sliter systemene fortsatt med problemer som krever provbart korrekt logisk resonnering og planlegging [97, 99]. På PlanBench-oppgaver som krever mange steg, faller nøyaktigheten drastisk [100].",
+    "topic": "Technical Performance"
+},
+{
+    "question": "Hva er 'RAG' (Retrieval-Augmented Generation) sin hovedfunksjon?",
+    "options": [
+"Å trene modeller uten data",
+"Å integrere LLM-er med gjenfinngingsmekanismer for å hente relevant informasjon fra dokumenter",
+"Å lage bilder av tekst",
+"Å slette virus fra datamaskinen"
+    ],
+    "correct": "Å integrere LLM-er med gjenfinngingsmekanismer for å hente relevant informasjon fra dokumenter",
+    "explanation": "RAG lar modellen først hente relevant informasjon fra eksterne kilder før den genererer et svar tilpasset brukerens spørsmål [101]. Dette brukes ofte for å svare på presise spørsmål fra store databaser [101].",
+    "topic": "Model Training & Optimization"
+},
+{
+    "question": "Hva er Andrew Ng sin definisjon på en 'Training dev' set?",
+    "options": [
+"Data brukt for å vise frem modellen til kunder",
+"En del av treningsdataene som man ikke trener på, men bruker for å sjekke om modellen overtilpasser",
+"Data som kun inneholder feil",
+"En samling av bilder av katter"
+    ],
+    "correct": "En del av treningsdataene som man ikke trener på, men bruker for å sjekke om modellen overtilpasser",
+    "explanation": "Ved å ha et **Training dev-sett** kan man diagnostisere om modellen lider av stor varians (overfitting) eller om det er et problem med data mismatch [54, 102]. Dette settet kommer fra samme distribusjon som treningsdataene [102].",
+    "topic": "Machine Learning Strategy"
+},
+{
+    "question": "Hva skjer med bias i modeller når de skaleres opp (blir større) ifølge forskning nevnt i AI Index?",
+    "options": [
+"Bias forsvinner helt",
+"Implisitt bias øker ofte med modellstørrelsen",
+"Bias forblir nøyaktig den samme",
+"Kun små modeller har bias"
+    ],
+    "correct": "Implisitt bias øker ofte med modellstørrelsen",
+    "explanation": "Studien avslører at etter hvert som modeller skaleres opp, øker ofte de **implisitte biasene**, selv om de presterer bedre på standard tester [79]. Dette skaper en illusjon av nøytralitet mens underliggende fordommer forsterkes [79].",
+    "topic": "Responsible AI, Fairness & Bias"
+},
+{
+    "question": "Hva er den foretrukne arbeidsflyten for å jobbe med en AI-algoritme?",
+    "options": [
+"Velge algoritme -> trene -> kjøre -> forberede data",
+"Identifisere problem -> forberede data -> velge algoritmer -> trene -> kjøre",
+"Trene -> velge algoritme -> identifisere problem",
+"Kjøre -> trene -> forberede data"
+    ],
+    "correct": "Identifisere problem -> forberede data -> velge algoritmer -> trene -> kjøre",
+    "explanation": "Dette er den logiske rekkefølgen for å utvikle en fungerende AI-applikasjon [3]. Å **forberede data** er et av de mest tidkrevende og kritiske stegene i denne prosessen [38].",
+    "topic": "AI Fundamentals & History"
+},
+{
+    "question": "Hvilken ferdighet innen AI har sett en vekst på 833 % i stillingsannonser?",
+    "options": [
+"SQL",
+"Data Science",
+"Python",
+"Agile methodology"
+    ],
+    "correct": "Data Science",
+    "explanation": "Etterspørselen etter **Data Science**-kompetanse i AI-stillinger har sett en formidabel vekst på 833 % sammenlignet med perioden 2012-14 [96].",
+    "topic": "Economy & Labor Market"
+}
 ]
